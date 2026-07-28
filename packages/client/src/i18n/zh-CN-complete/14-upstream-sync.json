@@ -1,0 +1,22 @@
+{
+  "appearanceToolbarConversationViewTurnLimitTitle": "对话视图历史范围",
+  "appearanceToolbarConversationViewTurnLimitDescription": "明确开启对话视图时，显示最近指定数量的用户轮次。加载更早轮次只会扩展当前标签页。",
+  "appearanceToolbarConversationViewTurnLimitUnit": "个轮次",
+  "sessionConversationLatestTurns": "已显示最近 {count} 个用户轮次",
+  "sessionConversationLoadEarlierTurns": "加载更早的 {count} 个用户轮次",
+  "sessionRecentTranscriptLoaded": "已加载最近的对话记录",
+  "sessionLoadOlderMessages": "加载更早消息",
+  "sessionLoadingOlderMessages": "正在加载…",
+  "conversationThinkingPreviewCurrent": "当前思考",
+  "conversationThinkingPreviewLatest": "最新思考",
+  "conversationThinkingPreviewPrevious": "此前思考",
+  "conversationThinkingPreviewCollapse": "收起思考预览",
+  "conversationThinkingPreviewExpand": "展开思考预览",
+  "conversationThinkingPreviewDismiss": "关闭{label}",
+  "conversationRecentActivities": "最近活动",
+  "sourceCopyRawContent": "复制原始文本",
+  "sourceOpenCommit": "打开提交",
+  "sourceBlameLoading": "正在加载提交历史…",
+  "sourceBlameLoadFailed": "加载提交历史失败",
+  "sourceBlameUnavailable": "提交历史不可用，但仍会显示文件内容。"
+}
