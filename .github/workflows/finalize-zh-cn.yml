@@ -1,0 +1,66 @@
+name: Finalize complete zh-CN catalog
+
+on:
+  push:
+    branches:
+      - i18n/complete-zh-cn
+    paths:
+      - .github/workflows/finalize-zh-cn.yml
+      - packages/client/src/i18n/zh-CN-complete/**
+      - packages/client/src/i18n/zh-CN-complete.ts
+
+permissions:
+  contents: write
+
+jobs:
+  finalize:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: i18n/complete-zh-cn
+      - name: Merge complete catalog into zh-CN.json
+        run: |
+          node --input-type=module <<'NODE'
+          import { readFile, readdir, writeFile } from "node:fs/promises";
+          import path from "node:path";
+
+          const dir = "packages/client/src/i18n";
+          const readJson = async (p) => JSON.parse(await readFile(p, "utf8"));
+          const en = await readJson(path.join(dir, "en.json"));
+          const base = await readJson(path.join(dir, "zh-CN.json"));
+          const fragmentDir = path.join(dir, "zh-CN-complete");
+          const fragmentFiles = (await readdir(fragmentDir))
+            .filter((name) => name.endsWith(".json"))
+            .sort();
+          const merged = {};
+          for (const file of fragmentFiles) {
+            Object.assign(merged, await readJson(path.join(fragmentDir, file)));
+          }
+          Object.assign(merged, base);
+
+          const missing = Object.keys(en).filter((key) => !Object.hasOwn(merged, key));
+          if (missing.length) {
+            console.error("Missing keys:", missing);
+            process.exit(1);
+          }
+
+          const ordered = Object.fromEntries(
+            Object.keys(en).map((key) => [key, merged[key]]),
+          );
+          await writeFile(
+            path.join(dir, "zh-CN.json"),
+            `${JSON.stringify(ordered, null, 2)}\n`,
+          );
+          console.log(`Wrote ${Object.keys(ordered).length} zh-CN entries.`);
+          NODE
+      - name: Commit finalized catalog
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add packages/client/src/i18n/zh-CN.json
+          if git diff --cached --quiet; then
+            exit 0
+          fi
+          git commit -m "i18n: finalize complete Simplified Chinese catalog"
+          git push origin HEAD:i18n/complete-zh-cn
