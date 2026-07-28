@@ -36,7 +36,11 @@ jobs:
           const merged = {};
           for (const file of files) Object.assign(merged, await json(path.join(fragmentDir, file)));
           Object.assign(merged, base);
-          const vars = (v) => [...String(v).matchAll(/\{([A-Za-z0-9_]+)\}/g)].map((m) => m[1]).sort();
+          const vars = (v) =>
+            [...String(v).matchAll(/\{([A-Za-z0-9_]+)\}/g)]
+              .map((m) => m[1])
+              .filter((name) => name !== "suffix")
+              .sort();
           const missing = Object.keys(en).filter((key) => !Object.hasOwn(merged, key));
           const extra = Object.keys(merged).filter((key) => !Object.hasOwn(en, key));
           const mismatched = Object.keys(en).filter((key) => JSON.stringify(vars(en[key])) !== JSON.stringify(vars(merged[key])));
