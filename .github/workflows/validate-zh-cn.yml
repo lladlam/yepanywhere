@@ -1,0 +1,89 @@
+name: Validate complete zh-CN catalog
+
+on:
+  push:
+    branches:
+      - i18n/complete-zh-cn
+    paths-ignore:
+      - zh-CN-validation-result.txt
+
+permissions:
+  contents: write
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: i18n/complete-zh-cn
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+      - name: Enable pnpm
+        run: corepack enable
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+      - name: Validate catalog coverage and placeholders
+        run: |
+          node --input-type=module <<'NODE'
+          import { readFile, readdir } from "node:fs/promises";
+          import path from "node:path";
+
+          const i18nDir = "packages/client/src/i18n";
+          const readJson = async (p) => JSON.parse(await readFile(p, "utf8"));
+          const en = await readJson(path.join(i18nDir, "en.json"));
+          const base = await readJson(path.join(i18nDir, "zh-CN.json"));
+          const fragmentDir = path.join(i18nDir, "zh-CN-complete");
+          const fragmentFiles = (await readdir(fragmentDir))
+            .filter((name) => name.endsWith(".json"))
+            .sort();
+          const merged = {};
+          for (const file of fragmentFiles) {
+            Object.assign(merged, await readJson(path.join(fragmentDir, file)));
+          }
+          Object.assign(merged, base);
+
+          const enKeys = Object.keys(en);
+          const missing = enKeys.filter((key) => !Object.hasOwn(merged, key));
+          const extra = Object.keys(merged).filter((key) => !Object.hasOwn(en, key));
+          const placeholders = (value) =>
+            [...String(value).matchAll(/\{([A-Za-z0-9_]+)\}/g)]
+              .map((match) => match[1])
+              .sort();
+          const placeholderMismatches = enKeys.filter(
+            (key) =>
+              JSON.stringify(placeholders(en[key])) !==
+              JSON.stringify(placeholders(merged[key])),
+          );
+
+          if (missing.length || extra.length || placeholderMismatches.length) {
+            console.error({ missing, extra, placeholderMismatches });
+            process.exit(1);
+          }
+
+          console.log(
+            `Validated ${enKeys.length} keys across ${fragmentFiles.length} fallback fragments; all placeholders match.`,
+          );
+          NODE
+      - name: Typecheck
+        run: pnpm typecheck
+      - name: Build client
+        run: pnpm --filter client build
+      - name: Record success
+        run: |
+          printf '%s\n' \
+            'zh-CN validation passed' \
+            'JSON parse: passed' \
+            'Catalog key coverage: passed' \
+            'Interpolation placeholders: passed' \
+            'TypeScript typecheck: passed' \
+            'Client build: passed' \
+            "Commit: $GITHUB_SHA" \
+            > zh-CN-validation-result.txt
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add zh-CN-validation-result.txt
+          git commit -m "chore: record zh-CN validation success"
+          git push origin HEAD:i18n/complete-zh-cn
