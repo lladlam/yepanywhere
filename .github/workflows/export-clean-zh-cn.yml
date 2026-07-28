@@ -1,0 +1,63 @@
+name: Export validated zh-CN catalog
+
+on:
+  push:
+    branches:
+      - i18n/complete-zh-cn
+    paths:
+      - .github/workflows/export-clean-zh-cn.yml
+
+permissions:
+  contents: write
+
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: i18n/complete-zh-cn
+          fetch-depth: 0
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 9.15.1
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+      - name: Validate complete Chinese catalog
+        run: |
+          node --input-type=module <<'NODE'
+          import { readFile } from "node:fs/promises";
+          const en = JSON.parse(await readFile("packages/client/src/i18n/en.json", "utf8"));
+          const zh = JSON.parse(await readFile("packages/client/src/i18n/zh-CN.json", "utf8"));
+          const vars = (value) =>
+            [...String(value).matchAll(/\{([A-Za-z0-9_]+)\}/g)]
+              .map((match) => match[1])
+              .filter((name) => name !== "suffix")
+              .sort();
+          const missing = Object.keys(en).filter((key) => !Object.hasOwn(zh, key));
+          const extra = Object.keys(zh).filter((key) => !Object.hasOwn(en, key));
+          const mismatched = Object.keys(en).filter(
+            (key) => JSON.stringify(vars(en[key])) !== JSON.stringify(vars(zh[key])),
+          );
+          console.log({ englishKeys: Object.keys(en).length, chineseKeys: Object.keys(zh).length, missing, extra, mismatched });
+          if (missing.length || extra.length || mismatched.length) process.exit(1);
+          NODE
+      - name: Typecheck
+        run: pnpm typecheck
+      - name: Build client
+        run: pnpm --filter client build
+      - name: Export only the finalized catalog
+        run: |
+          cp packages/client/src/i18n/zh-CN.json /tmp/zh-CN.json
+          git fetch origin i18n/complete-zh-cn-clean
+          git checkout i18n/complete-zh-cn-clean
+          cp /tmp/zh-CN.json packages/client/src/i18n/zh-CN.json
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add packages/client/src/i18n/zh-CN.json
+          git commit -m "i18n: complete Simplified Chinese translations"
+          git push origin HEAD:i18n/complete-zh-cn-clean
