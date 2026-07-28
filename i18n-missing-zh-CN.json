@@ -1,0 +1,4015 @@
+{
+  "summary": {
+    "englishKeyCount": 2278,
+    "localeCount": 1,
+    "totalMissing": 999
+  },
+  "locales": [
+    {
+      "locale": "zh-CN",
+      "file": "zh-CN.json",
+      "englishKeyCount": 2278,
+      "translatedCount": 1279,
+      "missingCount": 999,
+      "coveragePercent": 56.1,
+      "missing": [
+        {
+          "key": "workstreamsTitle",
+          "english": "Workstreams"
+        },
+        {
+          "key": "workstreamsLoading",
+          "english": "Loading workstreams..."
+        },
+        {
+          "key": "workstreamsLoadFailed",
+          "english": "Failed to load workstreams"
+        },
+        {
+          "key": "workstreamsPreviewFailed",
+          "english": "Failed to preview checkout destination"
+        },
+        {
+          "key": "workstreamsNewAction",
+          "english": "New workstream"
+        },
+        {
+          "key": "workstreamsCreateAction",
+          "english": "Create"
+        },
+        {
+          "key": "workstreamsCreatingAction",
+          "english": "Creating..."
+        },
+        {
+          "key": "workstreamsCreateFailed",
+          "english": "Failed to create workstream"
+        },
+        {
+          "key": "workstreamsCreateBusy",
+          "english": "Another workstream operation is already running for this project."
+        },
+        {
+          "key": "workstreamsLabelLabel",
+          "english": "Label"
+        },
+        {
+          "key": "workstreamsLabelPlaceholder",
+          "english": "Short description"
+        },
+        {
+          "key": "workstreamsDestinationLabel",
+          "english": "Destination"
+        },
+        {
+          "key": "workstreamsDestinationLoading",
+          "english": "Checking destination..."
+        },
+        {
+          "key": "workstreamsDestinationPending",
+          "english": "Enter a label"
+        },
+        {
+          "key": "workstreamsDisabledTitle",
+          "english": "Workstreams are turned off"
+        },
+        {
+          "key": "workstreamsDisabledDescription",
+          "english": "This page is not enabled on this server."
+        },
+        {
+          "key": "workstreamsSettingsErrorTitle",
+          "english": "Workstream settings unavailable"
+        },
+        {
+          "key": "workstreamsErrorTitle",
+          "english": "Workstreams could not be loaded"
+        },
+        {
+          "key": "workstreamsNoAccessTitle",
+          "english": "Project unavailable"
+        },
+        {
+          "key": "workstreamsNoAccessDescription",
+          "english": "This project is unavailable or cannot be shown here."
+        },
+        {
+          "key": "workstreamsEmptyTitle",
+          "english": "No checkout lanes"
+        },
+        {
+          "key": "workstreamsEmptyDescription",
+          "english": "No checkout lanes are stored for this project."
+        },
+        {
+          "key": "workstreamsNoCheckoutsTitle",
+          "english": "No checkout lanes yet"
+        },
+        {
+          "key": "workstreamsNoCheckoutsDescription",
+          "english": "Only the main checkout is listed for this project."
+        },
+        {
+          "key": "workstreamsTableLabel",
+          "english": "Project workstreams"
+        },
+        {
+          "key": "workstreamsColumnLane",
+          "english": "Lane"
+        },
+        {
+          "key": "workstreamsColumnKind",
+          "english": "Kind"
+        },
+        {
+          "key": "workstreamsColumnBranch",
+          "english": "Branch"
+        },
+        {
+          "key": "workstreamsColumnQueue",
+          "english": "Queue"
+        },
+        {
+          "key": "workstreamsColumnStatus",
+          "english": "Status"
+        },
+        {
+          "key": "workstreamsColumnSessions",
+          "english": "Sessions"
+        },
+        {
+          "key": "workstreamsColumnPath",
+          "english": "Path"
+        },
+        {
+          "key": "workstreamsKindMain",
+          "english": "Main"
+        },
+        {
+          "key": "workstreamsKindCheckout",
+          "english": "Checkout"
+        },
+        {
+          "key": "workstreamsQueuePaused",
+          "english": "Paused"
+        },
+        {
+          "key": "workstreamsQueueRunning",
+          "english": "Running"
+        },
+        {
+          "key": "workstreamsStatusActive",
+          "english": "Active"
+        },
+        {
+          "key": "workstreamsStatusArchived",
+          "english": "Archived"
+        },
+        {
+          "key": "workstreamsStatusLanded",
+          "english": "Landed"
+        },
+        {
+          "key": "workstreamsValueNone",
+          "english": "None"
+        },
+        {
+          "key": "workstreamsSessionsUnavailable",
+          "english": "Linked sessions unavailable"
+        },
+        {
+          "key": "explorationTitlePending",
+          "english": "Exploring"
+        },
+        {
+          "key": "explorationTitleComplete",
+          "english": "Explored"
+        },
+        {
+          "key": "explorationItemCountOne",
+          "english": "{count} item"
+        },
+        {
+          "key": "explorationItemCountMany",
+          "english": "{count} items"
+        },
+        {
+          "key": "explorationCollapse",
+          "english": "Collapse explored tools"
+        },
+        {
+          "key": "explorationExpand",
+          "english": "Expand explored tools"
+        },
+        {
+          "key": "explorationShowCommandDetails",
+          "english": "Show command details"
+        },
+        {
+          "key": "explorationHideCommandDetails",
+          "english": "Hide command details"
+        },
+        {
+          "key": "explorationLine",
+          "english": "line {line}"
+        },
+        {
+          "key": "explorationLineRange",
+          "english": "lines {start}-{end}"
+        },
+        {
+          "key": "sidebarSectionPendingSessions",
+          "english": "Pending Sessions"
+        },
+        {
+          "key": "sidebarHiddenDuplicateSessions",
+          "english": "{count} hidden (duplicate titles)"
+        },
+        {
+          "key": "settingsAppearanceDescription",
+          "english": "Theme, font size, display"
+        },
+        {
+          "key": "settingsPerformanceTitle",
+          "english": "Performance"
+        },
+        {
+          "key": "settingsPerformanceDescription",
+          "english": "Rendering, caching, memory"
+        },
+        {
+          "key": "settingsToolbarTitle",
+          "english": "Toolbar"
+        },
+        {
+          "key": "settingsToolbarDescription",
+          "english": "Composer controls to show"
+        },
+        {
+          "key": "settingsCacheMissBillingTitle",
+          "english": "Cache Billing"
+        },
+        {
+          "key": "settingsCacheMissBillingDescription",
+          "english": "Prompt-cache accounting"
+        },
+        {
+          "key": "settingsMessageDeliveryTitle",
+          "english": "Message Delivery"
+        },
+        {
+          "key": "settingsMessageDeliveryDescription",
+          "english": "Queued send batching, anchors"
+        },
+        {
+          "key": "settingsEnvironmentTitle",
+          "english": "Environment"
+        },
+        {
+          "key": "settingsEnvironmentDescription",
+          "english": "Startup environment variables"
+        },
+        {
+          "key": "environmentSectionTitle",
+          "english": "Environment variables"
+        },
+        {
+          "key": "environmentSectionDescription",
+          "english": "Documented variables that configure this server at startup. Changes take effect only after a restart, so these are read-only here. Secret values are shown redacted and never sent to your browser in full."
+        },
+        {
+          "key": "environmentLoading",
+          "english": "Loading…"
+        },
+        {
+          "key": "environmentLoadError",
+          "english": "Couldn't load environment variables."
+        },
+        {
+          "key": "environmentSecretBadge",
+          "english": "secret"
+        },
+        {
+          "key": "environmentValueNotSet",
+          "english": "not set"
+        },
+        {
+          "key": "environmentValueEmpty",
+          "english": "(empty)"
+        },
+        {
+          "key": "appearanceSettingsIconStyleTitle",
+          "english": "Settings Icons"
+        },
+        {
+          "key": "appearanceSettingsIconStyleDescription",
+          "english": "Choose the Settings category icon set for this browser."
+        },
+        {
+          "key": "appearanceSettingsIconStyleFlat",
+          "english": "Flat"
+        },
+        {
+          "key": "appearanceSettingsIconStyleFlatWhite",
+          "english": "Flat White"
+        },
+        {
+          "key": "appearanceSettingsIconStyleEmoji",
+          "english": "Emoji"
+        },
+        {
+          "key": "appearanceToolbarSettingsShortcutTitle",
+          "english": "Toolbar Settings"
+        },
+        {
+          "key": "appearanceToolbarSettingsShortcutDescription",
+          "english": "Configure composer toolbar controls, the default busy action, and the collapsed mobile action."
+        },
+        {
+          "key": "appearanceToolbarSettingsShortcutAction",
+          "english": "Open Toolbar"
+        },
+        {
+          "key": "appearanceOutputTypographyReset",
+          "english": "Reset typography"
+        },
+        {
+          "key": "outputProseFontInter",
+          "english": "Inter"
+        },
+        {
+          "key": "outputProseFontAlegreyaSans",
+          "english": "Alegreya Sans"
+        },
+        {
+          "key": "appearanceContentWidthUnit",
+          "english": "px"
+        },
+        {
+          "key": "appearanceGeneratedTitlesTitle",
+          "english": "Generated Titles"
+        },
+        {
+          "key": "appearanceGeneratedTitlesDescription",
+          "english": "Show a button by the session title that generates a short title using the agent. Off by default since it consumes tokens."
+        },
+        {
+          "key": "appearanceTooltipDelayTitle",
+          "english": "Tooltip Style and Delay"
+        },
+        {
+          "key": "appearanceTooltipDelayDescription",
+          "english": "Theme-matched tooltips appear after the pointer rests for this delay. Session preview cards wait three times longer; moving to an adjacent tooltip after one opens is instant."
+        },
+        {
+          "key": "appearanceTooltipModeTitle",
+          "english": "Tooltip style"
+        },
+        {
+          "key": "appearanceTooltipModeThemed",
+          "english": "Themed"
+        },
+        {
+          "key": "appearanceTooltipModeNative",
+          "english": "Native"
+        },
+        {
+          "key": "appearanceTooltipDelayUnit",
+          "english": "ms"
+        },
+        {
+          "key": "appearanceTooltipReset",
+          "english": "Reset tooltip delay"
+        },
+        {
+          "key": "appearanceHoverCardHeightTitle",
+          "english": "Hover Card Max Height"
+        },
+        {
+          "key": "appearanceHoverCardHeightDescription",
+          "english": "Maximum height of the session row preview card; taller shows more of the opening request."
+        },
+        {
+          "key": "appearanceHoverCardHeightUnit",
+          "english": "px"
+        },
+        {
+          "key": "appearanceHoverCardLineUnit",
+          "english": "line"
+        },
+        {
+          "key": "appearanceHoverCardLinesUnit",
+          "english": "lines"
+        },
+        {
+          "key": "appearanceHoverCardReset",
+          "english": "Reset"
+        },
+        {
+          "key": "appearanceSessionLoadingProgressTitle",
+          "english": "Session Loading Progress"
+        },
+        {
+          "key": "appearanceSessionLoadingProgressDescription",
+          "english": "Show detailed loading phases for large sessions and reveal long transcripts after a progress bar reaches 100%."
+        },
+        {
+          "key": "appearanceQuoteReplyButtonsTitle",
+          "english": "> Reply Buttons"
+        },
+        {
+          "key": "appearanceQuoteReplyButtonsDescription",
+          "english": "Choose between one block-level reply button, per-paragraph buttons on hover, or per-paragraph buttons always shown."
+        },
+        {
+          "key": "appearanceQuoteReplyButtonsBlock",
+          "english": "Block only"
+        },
+        {
+          "key": "appearanceQuoteReplyButtonsParagraphHover",
+          "english": "On hover"
+        },
+        {
+          "key": "appearanceQuoteReplyButtonsParagraphAlways",
+          "english": "Always"
+        },
+        {
+          "key": "appearanceSidebarDuplicateHidingTitle",
+          "english": "Hide Duplicate Sidebar Sessions"
+        },
+        {
+          "key": "appearanceSidebarDuplicateHidingDescription",
+          "english": "Group duplicate recent and older sidebar rows behind a hidden count. Disable to show every duplicate session."
+        },
+        {
+          "key": "performanceSectionTitle",
+          "english": "Performance"
+        },
+        {
+          "key": "performanceSectionDescription",
+          "english": "Tune client-side rendering and route retention for large sessions. These settings are local to this browser."
+        },
+        {
+          "key": "performanceKeepRecentSessionMountedTitle",
+          "english": "Keep Recent Session Mounted"
+        },
+        {
+          "key": "performanceKeepRecentSessionMountedDescription",
+          "english": "Keep the most recently viewed session mounted briefly after leaving it so returning can be instant. Disable to reduce memory use."
+        },
+        {
+          "key": "performanceActiveWindowTrimTitle",
+          "english": "Unload Older Transcript Messages"
+        },
+        {
+          "key": "performanceActiveWindowTrimDescription",
+          "english": "Automatically unload older transcript messages while following the live tail to limit memory growth. Full history remains available with Load older."
+        },
+        {
+          "key": "performanceOffscreenTranscriptRenderingTitle",
+          "english": "Off-Screen Transcript Rendering"
+        },
+        {
+          "key": "performanceOffscreenTranscriptRenderingDescription",
+          "english": "Experimentally skip rendering transcript rows outside the viewport to reduce memory use. This is off by default because rows can jump as they come into view."
+        },
+        {
+          "key": "performanceTranscriptCacheTitle",
+          "english": "Session Transcript Cache"
+        },
+        {
+          "key": "performanceTranscriptCacheDescription",
+          "english": "Memory budget for keeping recent session transcripts in memory so returning is fast. Off forces fresh loads."
+        },
+        {
+          "key": "performanceTranscriptCacheMbValue",
+          "english": "{count} MB"
+        },
+        {
+          "key": "performanceTranscriptCacheEquivalentLast",
+          "english": "≈ {count} sessions the size of your last viewed ({size} MB)"
+        },
+        {
+          "key": "performanceTranscriptCacheEquivalentTypical",
+          "english": "≈ {count} typical sessions (~{size} MB each)"
+        },
+        {
+          "key": "performanceTranscriptCacheCurrentUsage",
+          "english": "Current memory: {warmSize} MB warm cache, {liveSize} MB live sessions"
+        },
+        {
+          "key": "performanceTranscriptCacheTtlTitle",
+          "english": "Transcript Cache Lifetime"
+        },
+        {
+          "key": "performanceTranscriptCacheTtlDescription",
+          "english": "How long an unvisited cached transcript stays in memory before it is freed."
+        },
+        {
+          "key": "performanceTranscriptCacheTtlHoursValue",
+          "english": "{count} h"
+        },
+        {
+          "key": "performanceTranscriptCacheTtlDaysValue",
+          "english": "{count} d"
+        },
+        {
+          "key": "appearanceToolbarHiddenHeading",
+          "english": "Hidden"
+        },
+        {
+          "key": "appearanceToolbarHiddenDescription",
+          "english": "Off. Slide right to put one back on the toolbar."
+        },
+        {
+          "key": "appearanceToolbarShownHeading",
+          "english": "Shown"
+        },
+        {
+          "key": "appearanceToolbarShownDescription",
+          "english": "On the toolbar, in left-to-right order. Slide left to hide a control, or right to keep it visible longer when space is tight."
+        },
+        {
+          "key": "appearanceToolbarSideLeft",
+          "english": "Left side"
+        },
+        {
+          "key": "appearanceToolbarSideRight",
+          "english": "Right side"
+        },
+        {
+          "key": "appearanceToolbarSideNoneHidden",
+          "english": "None hidden"
+        },
+        {
+          "key": "appearanceToolbarPresenceAria",
+          "english": "{control} visibility"
+        },
+        {
+          "key": "appearanceToolbarPresenceHiddenCaption",
+          "english": "Not shown on the toolbar."
+        },
+        {
+          "key": "appearanceToolbarPresenceFirstCaption",
+          "english": "Moves to the More (...) menu first when space is tight."
+        },
+        {
+          "key": "appearanceToolbarPresenceMidCaption",
+          "english": "Moves to the More (...) menu after the first controls."
+        },
+        {
+          "key": "appearanceToolbarPresenceLastCaption",
+          "english": "Stays visible longer, then moves to the More (...) menu near the end."
+        },
+        {
+          "key": "appearanceToolbarPresencePinCaption",
+          "english": "Always visible; never moves to the More (...) menu."
+        },
+        {
+          "key": "appearanceToolbarPresenceShownCaption",
+          "english": "Always visible on the toolbar."
+        },
+        {
+          "key": "appearanceToolbarActivateControl",
+          "english": "Edit {control}"
+        },
+        {
+          "key": "appearanceToolbarHide",
+          "english": "Hide"
+        },
+        {
+          "key": "appearanceToolbarShowAlways",
+          "english": "Show always"
+        },
+        {
+          "key": "appearanceToolbarDefaultActionTitle",
+          "english": "Default Busy Send"
+        },
+        {
+          "key": "appearanceToolbarDefaultActionDescription",
+          "english": "What Enter and the primary button do while an agent is running. Per-session swaps still override it."
+        },
+        {
+          "key": "appearanceToolbarDefaultActionSteer",
+          "english": "Steer current turn"
+        },
+        {
+          "key": "appearanceToolbarDefaultActionQueue",
+          "english": "Queue message"
+        },
+        {
+          "key": "appearanceToolbarCollapsedButtonTitle",
+          "english": "Mini-composer Button"
+        },
+        {
+          "key": "appearanceToolbarCollapsedButtonDescription",
+          "english": "Which trailing action the collapsed composer shows on tight layouts."
+        },
+        {
+          "key": "appearanceToolbarCollapsedButtonPrimary",
+          "english": "Default action"
+        },
+        {
+          "key": "appearanceToolbarCollapsedButtonAlternate",
+          "english": "Alternate action"
+        },
+        {
+          "key": "appearanceToolbarCollapsedButtonMicrophone",
+          "english": "Microphone"
+        },
+        {
+          "key": "appearanceToolbarConversationViewTitle",
+          "english": "Conversation View"
+        },
+        {
+          "key": "appearanceToolbarConversationViewDescription",
+          "english": "Show a chat button that switches between the full activity transcript and a condensed conversation."
+        },
+        {
+          "key": "appearanceToolbarWaveformTitle",
+          "english": "Live Microphone Waveform"
+        },
+        {
+          "key": "appearanceToolbarWaveformDescription",
+          "english": "Show a live audio waveform in unused center space while recording."
+        },
+        {
+          "key": "appearanceToolbarProjectQueueTitle",
+          "english": "Current-session Project Queue"
+        },
+        {
+          "key": "appearanceToolbarProjectQueueDescription",
+          "english": "Show the contextual Project Queue button that sends the draft to the current session after the whole project goes idle."
+        },
+        {
+          "key": "appearanceToolbarProjectQueueNewSessionShortcutTitle",
+          "english": "Queue as New Session Shortcut"
+        },
+        {
+          "key": "appearanceToolbarProjectQueueNewSessionShortcutDescription",
+          "english": "Show the + shortcut in an existing session's composer that queues the draft to start a separate session after the whole project goes idle. The New Session page is unaffected."
+        },
+        {
+          "key": "processingThinkingRightClickShowExpandAll",
+          "english": "Right-click: show thinking and expand all blocks"
+        },
+        {
+          "key": "processingThinkingRightClickExpandAll",
+          "english": "Right-click: expand all thinking blocks, including earlier ones"
+        },
+        {
+          "key": "processingThinkingRightClickLatestOnly",
+          "english": "Right-click: auto-expand only the latest thinking block"
+        },
+        {
+          "key": "composerModelChipTitle",
+          "english": "Model for this session — click to change"
+        },
+        {
+          "key": "floatingComposerModelChipTitle",
+          "english": "Model a new session will start with — adjust it on the New Session page"
+        },
+        {
+          "key": "projectQueueTitle",
+          "english": "Project Queue"
+        },
+        {
+          "key": "projectQueueDescription",
+          "english": "Messages waiting for the whole project to go idle."
+        },
+        {
+          "key": "projectQueuePausedDescription",
+          "english": "Dispatch is paused. Resume explicitly, or use an item action to resume automatically."
+        },
+        {
+          "key": "projectQueuePausedAfterRestartDescription",
+          "english": "Dispatch is paused after server restart."
+        },
+        {
+          "key": "projectQueuePausedNotice",
+          "english": "Project Queue dispatch is paused. Resume explicitly, or use an item action to resume automatically."
+        },
+        {
+          "key": "projectQueuePausedAfterRestartNotice",
+          "english": "Project Queue dispatch was paused because the server restarted with queued work still pending. Resume explicitly, or use an item action to resume automatically."
+        },
+        {
+          "key": "projectQueuePausedNoticeWithDelay",
+          "english": "Project Queue dispatch is paused. After dispatch resumes, the next item may still wait up to {duration} for project quiet before starting."
+        },
+        {
+          "key": "projectQueuePausedAfterRestartNoticeWithDelay",
+          "english": "Project Queue dispatch was paused because the server restarted with queued work still pending. After dispatch resumes, the next item may still wait up to {duration} for project quiet before starting."
+        },
+        {
+          "key": "projectQueueCount",
+          "english": "{count} queued"
+        },
+        {
+          "key": "projectQueueRefreshing",
+          "english": "Refreshing..."
+        },
+        {
+          "key": "projectQueueLoadError",
+          "english": "Project queue error: {message}"
+        },
+        {
+          "key": "projectQueueRecoveredTitle",
+          "english": "Paused Session Queue"
+        },
+        {
+          "key": "projectQueueRecoveredCount",
+          "english": "{count} paused"
+        },
+        {
+          "key": "projectQueueUnknownProject",
+          "english": "Unknown project"
+        },
+        {
+          "key": "projectQueueAttachmentOnly",
+          "english": "Attachment-only message"
+        },
+        {
+          "key": "projectQueueTargetNewSession",
+          "english": "New session"
+        },
+        {
+          "key": "projectQueueTargetSession",
+          "english": "Session {sessionId}"
+        },
+        {
+          "key": "projectQueueStatusQueued",
+          "english": "Queued"
+        },
+        {
+          "key": "projectQueueStatusDispatching",
+          "english": "Sending"
+        },
+        {
+          "key": "projectQueueStatusFailed",
+          "english": "Failed"
+        },
+        {
+          "key": "projectQueueStartNow",
+          "english": "Start now"
+        },
+        {
+          "key": "projectQueueForceStart",
+          "english": "Force start"
+        },
+        {
+          "key": "projectQueuePromoting",
+          "english": "Starting..."
+        },
+        {
+          "key": "projectQueueStartNowTitle",
+          "english": "Try this Project Queue item now without waiting for the quiet window."
+        },
+        {
+          "key": "projectQueueForceStartTitle",
+          "english": "Start despite current blockers: {blockers}"
+        },
+        {
+          "key": "projectQueueReadinessSeconds",
+          "english": "{seconds}s"
+        },
+        {
+          "key": "projectQueueReadinessPaused",
+          "english": "Dispatch paused."
+        },
+        {
+          "key": "projectQueueReadinessBlocked",
+          "english": "Blocked: {blockers}"
+        },
+        {
+          "key": "projectQueueReadinessWaitingQuiet",
+          "english": "Waiting for project quiet: {duration} remaining."
+        },
+        {
+          "key": "projectQueueReadinessReady",
+          "english": "Ready to start."
+        },
+        {
+          "key": "projectQueueReadinessDispatching",
+          "english": "Dispatching now."
+        },
+        {
+          "key": "projectQueueReadinessEmpty",
+          "english": "No queued project work."
+        },
+        {
+          "key": "projectQueueBlockerInTurn",
+          "english": "{session} in turn"
+        },
+        {
+          "key": "projectQueueBlockerWaitingInput",
+          "english": "{session} waiting for input"
+        },
+        {
+          "key": "projectQueueBlockerProviderRetained",
+          "english": "{session} retaining provider work"
+        },
+        {
+          "key": "projectQueueBlockerDirectQueue",
+          "english": "{session} direct queue"
+        },
+        {
+          "key": "projectQueueBlockerDeferredQueue",
+          "english": "{session} deferred queue"
+        },
+        {
+          "key": "projectQueueBlockerPendingInput",
+          "english": "{session} pending input"
+        },
+        {
+          "key": "projectQueueBlockerLiveness",
+          "english": "{session} liveness {status}"
+        },
+        {
+          "key": "projectQueueBlockerExternal",
+          "english": "{session} externally active"
+        },
+        {
+          "key": "projectQueueBlockerWorkerQueue",
+          "english": "worker queue"
+        },
+        {
+          "key": "projectQueueBlockerRecoveredSessionQueue",
+          "english": "{count} paused session queue item(s)"
+        },
+        {
+          "key": "projectQueueBlockerFirstFailed",
+          "english": "first queue item failed"
+        },
+        {
+          "key": "projectQueueBlockerUnknown",
+          "english": "{blocker}"
+        },
+        {
+          "key": "projectQueueBlockerMore",
+          "english": "{count} more"
+        },
+        {
+          "key": "projectQueueRetry",
+          "english": "Retry"
+        },
+        {
+          "key": "projectQueueEdit",
+          "english": "Edit"
+        },
+        {
+          "key": "projectQueueMoveToTop",
+          "english": "Move to top"
+        },
+        {
+          "key": "projectQueueSave",
+          "english": "Save"
+        },
+        {
+          "key": "projectQueueDiscard",
+          "english": "Discard"
+        },
+        {
+          "key": "projectQueuePause",
+          "english": "Pause"
+        },
+        {
+          "key": "projectQueueResume",
+          "english": "Resume"
+        },
+        {
+          "key": "projectQueueResumeFailed",
+          "english": "Failed to resume Project Queue: {message}"
+        },
+        {
+          "key": "projectQueueEditMessageLabel",
+          "english": "Project Queue message"
+        },
+        {
+          "key": "projectQueueCancel",
+          "english": "Cancel"
+        },
+        {
+          "key": "projectQueueDelete",
+          "english": "Delete"
+        },
+        {
+          "key": "projectQueueSubmitFailed",
+          "english": "Failed to queue for Project Queue: {message}"
+        },
+        {
+          "key": "projectQueueSessionQueuedToast",
+          "english": "Queued for Project Queue."
+        },
+        {
+          "key": "projectQueueNewSessionQueuedToast",
+          "english": "Queued new session for Project Queue."
+        },
+        {
+          "key": "projectQueueNewSessionNeedsProject",
+          "english": "Choose a project to use Project Queue."
+        },
+        {
+          "key": "projectQueueNewSessionAttachmentsUnsupported",
+          "english": "Project Queue for new sessions does not support attachments yet."
+        },
+        {
+          "key": "projectQueueNewSessionAttachmentsPreparing",
+          "english": "Wait for attachments to finish uploading."
+        },
+        {
+          "key": "projectQueueInlineStatusQueued",
+          "english": "Project Queue (#{position})"
+        },
+        {
+          "key": "projectQueueInlineStatusDispatching",
+          "english": "Project Queue sending (#{position})"
+        },
+        {
+          "key": "projectQueueInlineStatusFailed",
+          "english": "Project Queue failed (#{position})"
+        },
+        {
+          "key": "projectQueueInlineCopy",
+          "english": "Copy Project Queue message"
+        },
+        {
+          "key": "projectQueueInlineEdit",
+          "english": "Edit Project Queue item"
+        },
+        {
+          "key": "projectQueueInlineEditFailed",
+          "english": "Failed to edit Project Queue item: {message}"
+        },
+        {
+          "key": "projectQueueInlineSteer",
+          "english": "Steer Project Queue item now"
+        },
+        {
+          "key": "projectQueueInlineSteered",
+          "english": "Steered Project Queue item now."
+        },
+        {
+          "key": "projectQueueInlineSteerFailed",
+          "english": "Failed to steer Project Queue item: {message}"
+        },
+        {
+          "key": "projectQueueInlineCancel",
+          "english": "Cancel Project Queue item"
+        },
+        {
+          "key": "projectQueueInlineCancelFailed",
+          "english": "Failed to cancel Project Queue item: {message}"
+        },
+        {
+          "key": "projectQueueSidebarBadge",
+          "english": "Project Queue"
+        },
+        {
+          "key": "toolbarProjectQueueLabel",
+          "english": "Queue for Project Queue"
+        },
+        {
+          "key": "toolbarProjectQueueTooltip",
+          "english": "Send after all sessions in this project are idle"
+        },
+        {
+          "key": "toolbarProjectQueueNewSessionLabel",
+          "english": "Queue as new session for Project Queue"
+        },
+        {
+          "key": "toolbarProjectQueueNewSessionTooltip",
+          "english": "Start a new session after all sessions in this project are idle"
+        },
+        {
+          "key": "projectQueueAgeJustNow",
+          "english": "just now"
+        },
+        {
+          "key": "projectQueueAgeMinutes",
+          "english": "{count}m ago"
+        },
+        {
+          "key": "projectQueueAgeHours",
+          "english": "{count}h ago"
+        },
+        {
+          "key": "projectQueueAgeDays",
+          "english": "{count}d ago"
+        },
+        {
+          "key": "projectCardQueueCount",
+          "english": "Project Queue items: {count}"
+        },
+        {
+          "key": "newSessionWorkstreamLabel",
+          "english": "Workstream"
+        },
+        {
+          "key": "newSessionWorkstreamMain",
+          "english": "Main checkout"
+        },
+        {
+          "key": "newSessionGatewayCatalogLoading",
+          "english": "Checking the configured gateway for models…"
+        },
+        {
+          "key": "newSessionGatewayCatalogUnavailable",
+          "english": "No models are available from the configured gateway. Check that it is running, then retry."
+        },
+        {
+          "key": "newSessionGatewayCatalogRetry",
+          "english": "Retry"
+        },
+        {
+          "key": "recapModeNativeTimedDescription",
+          "english": "Use provider-native recaps after backgrounding (not closing) for {seconds} s."
+        },
+        {
+          "key": "recapModeSideSessionTimedDescription",
+          "english": "Summarize tailed assistant output after backgrounding (not closing) for {seconds} s."
+        },
+        {
+          "key": "recapModeForkTimedDescription",
+          "english": "Summarize from a temporary fork after backgrounding (not closing) for {seconds} s."
+        },
+        {
+          "key": "recapAfterSecondsInlineNative",
+          "english": "Summarize provider-native recaps for backgrounded (not closed) sessions after"
+        },
+        {
+          "key": "recapAfterSecondsInlineSideSession",
+          "english": "Summarize tailed output for backgrounded (not closed) sessions after"
+        },
+        {
+          "key": "recapAfterSecondsInlineFork",
+          "english": "Summarize from a temporary fork for backgrounded (not closed) sessions after"
+        },
+        {
+          "key": "promptCacheKeepaliveTitle",
+          "english": "Prompt Cache"
+        },
+        {
+          "key": "promptCacheKeepaliveDescription",
+          "english": "Keep open {provider} sessions warm after idle time without changing transcript activity."
+        },
+        {
+          "key": "promptCacheKeepaliveModeAuto",
+          "english": "On"
+        },
+        {
+          "key": "promptCacheKeepaliveModeAutoDescription",
+          "english": "Refresh after {minutes} min while a session view is open."
+        },
+        {
+          "key": "promptCacheKeepaliveModeOff",
+          "english": "Off"
+        },
+        {
+          "key": "promptCacheKeepaliveModeOffDescription",
+          "english": "Do not run prompt-cache keepalive for this provider."
+        },
+        {
+          "key": "promptCacheKeepaliveCadenceLabel",
+          "english": "Inactivity"
+        },
+        {
+          "key": "promptCacheKeepaliveCadenceAria",
+          "english": "Prompt-cache keepalive inactivity minutes"
+        },
+        {
+          "key": "promptCacheKeepaliveCadenceUnit",
+          "english": "min"
+        },
+        {
+          "key": "promptCacheKeepaliveSaved",
+          "english": "Saved prompt-cache keepalive"
+        },
+        {
+          "key": "promptCacheKeepaliveSaveError",
+          "english": "Failed to save prompt-cache keepalive"
+        },
+        {
+          "key": "cacheMissBillingTitle",
+          "english": "Cache Billing"
+        },
+        {
+          "key": "cacheMissBillingLoading",
+          "english": "Loading..."
+        },
+        {
+          "key": "cacheMissBillingDescription",
+          "english": "Record usage-accounting evidence when Claude or Codex reports cache reuse or a large uncached input on a fork or recently warm session."
+        },
+        {
+          "key": "cacheMissBillingEnableTitle",
+          "english": "Track Cache Accounting"
+        },
+        {
+          "key": "cacheMissBillingEnableDescription",
+          "english": "Store a server-side log when provider usage confirms or violates YA's expected zero-cost retained prefix."
+        },
+        {
+          "key": "cacheMissBillingToastTitle",
+          "english": "Popup on Miss"
+        },
+        {
+          "key": "cacheMissBillingToastDescription",
+          "english": "Show an in-app warning when a suspected cache-billing miss is recorded."
+        },
+        {
+          "key": "cacheMissBillingClaudeFreshWindowTitle",
+          "english": "Claude Fresh Window"
+        },
+        {
+          "key": "cacheMissBillingClaudeFreshWindowDescription",
+          "english": "Expect zero uncached prefix cost for Claude forks and warm turns inside this window; YA launches Claude with one-hour prompt caching by default."
+        },
+        {
+          "key": "cacheMissBillingCodexFreshWindowTitle",
+          "english": "Codex Fresh Window"
+        },
+        {
+          "key": "cacheMissBillingCodexFreshWindowDescription",
+          "english": "Expect zero uncached prefix cost for Codex forks and warm turns inside this conservative measured window."
+        },
+        {
+          "key": "cacheMissBillingMinimumTokensTitle",
+          "english": "Minimum Uncached Input"
+        },
+        {
+          "key": "cacheMissBillingMinimumTokensDescription",
+          "english": "Ignore small turns below this provider-reported uncached input size."
+        },
+        {
+          "key": "cacheMissBillingMinutesUnit",
+          "english": "min"
+        },
+        {
+          "key": "cacheMissBillingTokensUnit",
+          "english": "tokens"
+        },
+        {
+          "key": "cacheMissBillingEventsDescription",
+          "english": "Recent server-stored evidence. Open the linked session and use the recorded message position when checking provider accounting."
+        },
+        {
+          "key": "cacheMissBillingFailuresTitle",
+          "english": "Unexpected recomputes"
+        },
+        {
+          "key": "cacheMissBillingSuccessesTitle",
+          "english": "Expected cache hits"
+        },
+        {
+          "key": "cacheMissBillingFailuresEmpty",
+          "english": "No unexpected recomputes recorded."
+        },
+        {
+          "key": "cacheMissBillingSuccessesEmpty",
+          "english": "No expected cache hits recorded."
+        },
+        {
+          "key": "cacheMissBillingEventsLoadError",
+          "english": "Failed to load cache-billing events."
+        },
+        {
+          "key": "cacheMissBillingReasonForkMiss",
+          "english": "Fork prefix cache miss"
+        },
+        {
+          "key": "cacheMissBillingReasonWarmMiss",
+          "english": "Warm session cache miss"
+        },
+        {
+          "key": "cacheMissBillingReasonForkHit",
+          "english": "Fork prefix cache hit"
+        },
+        {
+          "key": "cacheMissBillingReasonWarmHit",
+          "english": "Warm session cache hit"
+        },
+        {
+          "key": "cacheMissBillingEventUsageMiss",
+          "english": "{provider} reported {tokens} uncached input tokens."
+        },
+        {
+          "key": "cacheMissBillingEventUsageHit",
+          "english": "{provider} reused {tokens} cached input tokens."
+        },
+        {
+          "key": "cacheMissBillingEventDetail",
+          "english": "{time} · {position}"
+        },
+        {
+          "key": "cacheMissBillingExpectedBasisFork",
+          "english": "byte-identical provider fork"
+        },
+        {
+          "key": "cacheMissBillingExpectedBasisWarm",
+          "english": "same-session byte-identical prefix"
+        },
+        {
+          "key": "cacheMissBillingExpectedCostDetail",
+          "english": "Expected input cost: 0 uncached prefix tokens ({basis}, {window} min window)."
+        },
+        {
+          "key": "cacheMissBillingEventMessageId",
+          "english": "message {messageId}"
+        },
+        {
+          "key": "cacheMissBillingEventMessageIndex",
+          "english": "live message #{index}"
+        },
+        {
+          "key": "cacheMissBillingEventMessageUnknown",
+          "english": "message position unknown"
+        },
+        {
+          "key": "cacheMissBillingToast",
+          "english": "{provider} reported {tokens} uncached input tokens where YA expected cache."
+        },
+        {
+          "key": "cacheMissBillingOpenSession",
+          "english": "Open Session"
+        },
+        {
+          "key": "sessionDraftAttachmentsUnavailable",
+          "english": "Draft attachments were no longer available."
+        },
+        {
+          "key": "sessionThinkingChangeFailed",
+          "english": "Failed to change thinking: {message}"
+        },
+        {
+          "key": "sessionUnconfirmedSteerCancelFailed",
+          "english": "Failed to cancel sent message: {message}"
+        },
+        {
+          "key": "sessionRecoveredQueuedPaused",
+          "english": "Paused after restart"
+        },
+        {
+          "key": "sessionRecoveredQueuedPausedTitle",
+          "english": "This queued patient message was recovered after a server restart and will not send until resumed."
+        },
+        {
+          "key": "sessionRecoveredQueuedResume",
+          "english": "Resume recovered queued message"
+        },
+        {
+          "key": "sessionRecoveredQueuedResumeShort",
+          "english": "Resume"
+        },
+        {
+          "key": "sessionRecoveredQueuedResumeFailed",
+          "english": "Failed to resume recovered queued message: {message}"
+        },
+        {
+          "key": "sessionRecoveredQueuedDelete",
+          "english": "Delete recovered queued message"
+        },
+        {
+          "key": "sessionRecoveredQueuedDeleteShort",
+          "english": "Delete"
+        },
+        {
+          "key": "sessionRecoveredQueuedDeleteFailed",
+          "english": "Failed to delete recovered queued message: {message}"
+        },
+        {
+          "key": "sessionDeferredSteerFailed",
+          "english": "Failed to steer queued message: {message}"
+        },
+        {
+          "key": "sessionQuoteSelection",
+          "english": "Quote selection"
+        },
+        {
+          "key": "sessionQuoteSelectionShort",
+          "english": "Quote"
+        },
+        {
+          "key": "sessionQuoteBlock",
+          "english": "Quote this paragraph — or select text to comment on a range"
+        },
+        {
+          "key": "sessionQuoteComposerUnavailable",
+          "english": "Composer is not available."
+        },
+        {
+          "key": "sessionQueuedCopy",
+          "english": "Copy queued message"
+        },
+        {
+          "key": "sessionQueuedEdit",
+          "english": "Edit queued message"
+        },
+        {
+          "key": "sessionQueuedCancel",
+          "english": "Cancel queued message"
+        },
+        {
+          "key": "sessionQueuedInlineEditLabel",
+          "english": "Edit queued message text"
+        },
+        {
+          "key": "sessionQueuedInlineSave",
+          "english": "Save edit"
+        },
+        {
+          "key": "sessionQueuedInlineCancel",
+          "english": "Cancel edit (Esc)"
+        },
+        {
+          "key": "sessionSteerNow",
+          "english": "Steer now"
+        },
+        {
+          "key": "sessionSteerQueuedMessageNow",
+          "english": "Steer queued message now"
+        },
+        {
+          "key": "sessionSteerQueuedMessageThrough",
+          "english": "Steer this and {count} earlier patient message{suffix} now"
+        },
+        {
+          "key": "sessionTitleSave",
+          "english": "Save title (Enter)"
+        },
+        {
+          "key": "sessionRecentSessions",
+          "english": "Recent sessions"
+        },
+        {
+          "key": "sessionGenerateNewTitle",
+          "english": "Generate new title"
+        },
+        {
+          "key": "sessionRetitleUseGenerated",
+          "english": "Use generated title"
+        },
+        {
+          "key": "sessionRetitleUseGeneratedWhenReady",
+          "english": "Use generated title when ready"
+        },
+        {
+          "key": "sessionRetitleSaveAsTyped",
+          "english": "Save title as typed (Ctrl+Enter)"
+        },
+        {
+          "key": "sessionRetitleCancel",
+          "english": "Cancel retitle (Esc)"
+        },
+        {
+          "key": "sessionRetitleGenerating",
+          "english": "Generating title..."
+        },
+        {
+          "key": "sessionRetitleDeferred",
+          "english": "Generating title; will save when ready..."
+        },
+        {
+          "key": "sessionRetitleProposalLabel",
+          "english": "Suggested:"
+        },
+        {
+          "key": "sessionRetitleFailed",
+          "english": "Failed to generate title"
+        },
+        {
+          "key": "sessionRetitleUnsupported",
+          "english": "Generated titles need transcript fork support for this provider."
+        },
+        {
+          "key": "sessionPromptSuggestionsEnabled",
+          "english": "Suggestions enabled"
+        },
+        {
+          "key": "sessionPromptSuggestionsDisabled",
+          "english": "Suggestions disabled"
+        },
+        {
+          "key": "sessionPromptSuggestionsFailed",
+          "english": "Failed to update suggestions"
+        },
+        {
+          "key": "publicShareLiveSecretWarning",
+          "english": "WARNING: assistant read, edits, commands may leak secrets!"
+        },
+        {
+          "key": "publicShareReadOnlySecretCaution",
+          "english": "Read, edit, and command output shown so far should be considered public."
+        },
+        {
+          "key": "sessionExternalWarningElapsed",
+          "english": "detected {duration} ago."
+        },
+        {
+          "key": "sessionExternalWarningExplainTitle",
+          "english": "Why \"at your own risk\"?"
+        },
+        {
+          "key": "sessionExternalRiskIntro",
+          "english": "Another program — often an agent you started elsewhere (Claude, Codex, or Gemini in a terminal, an IDE extension, or another tool) — is currently writing to this conversation's transcript. Each session is a single file on disk, and if you also send from here, two programs append to that one file at once without coordinating. The likely effects:"
+        },
+        {
+          "key": "sessionExternalRiskUnseenLead",
+          "english": "The other program may not see your messages."
+        },
+        {
+          "key": "sessionExternalRiskUnseenBody",
+          "english": " A terminal or IDE session keeps the conversation in its own memory and generally won't reload the transcript when this app appends to it, so turns you add here can stay invisible there — both on screen and in the context it sends to the model next."
+        },
+        {
+          "key": "sessionExternalRiskForkLead",
+          "english": "The conversation can quietly split in two."
+        },
+        {
+          "key": "sessionExternalRiskForkBody",
+          "english": " A transcript is a tree of turns, each pointing back to one earlier turn. If the other program continues from the turn it remembers while this app continues from the latest turn on disk, you end up with two branches in one file, and only one is treated as the live tip."
+        },
+        {
+          "key": "sessionExternalRiskLostLead",
+          "english": "Work on the side branch can be lost on the next resume."
+        },
+        {
+          "key": "sessionExternalRiskLostBody",
+          "english": " When the session is resumed later, the model's context is rebuilt by walking back from the chosen tip, so anything on the branch that wasn't chosen — even finished work you already read — may simply be gone afterward, with no error."
+        },
+        {
+          "key": "sessionExternalRiskCaveat",
+          "english": "These are the most likely outcomes, not a guarantee. The exact effects depend on what the other program is and how it manages the session, and there may be others — for instance, if both programs write at the same instant, the shared transcript file itself could be left inconsistent. The safe move is to drive a session from one place at a time: close the other program, or treat this view as read-only until the warning clears."
+        },
+        {
+          "key": "pendingToolWarningWaiting",
+          "english": "Unfinished {tool} call in this session."
+        },
+        {
+          "key": "pendingToolWarningStale",
+          "english": "Unfinished {tool} call, possibly abandoned."
+        },
+        {
+          "key": "pendingToolWarningElapsed",
+          "english": "Last activity {duration} ago."
+        },
+        {
+          "key": "pendingToolWarningExplainTitle",
+          "english": "Why check the other process?"
+        },
+        {
+          "key": "pendingToolRiskIntro",
+          "english": "This session's transcript ends on a tool call with no result, and no live process is detected driving it. Another program (a terminal or IDE) may still be running the call or be parked at a prompt — or it may have exited and left the call dangling. YA can't tell which. The likely effects of sending from here:"
+        },
+        {
+          "key": "pendingToolRiskUnblockLead",
+          "english": "It won't answer what's blocking."
+        },
+        {
+          "key": "pendingToolRiskUnblockBody",
+          "english": " If the other program is parked at a prompt, that prompt lives in its own UI, not as a message in this transcript, so a message from here does not resolve it."
+        },
+        {
+          "key": "pendingToolRiskForkLead",
+          "english": "It can fork the conversation."
+        },
+        {
+          "key": "pendingToolRiskForkBody",
+          "english": " Sending appends onto a turn whose tool call is unfinished; when the other program resumes from the call it remembers, the histories split into two branches and a later resume keeps only one."
+        },
+        {
+          "key": "pendingToolRiskDiscardLead",
+          "english": "If that program already exited, the call is discarded."
+        },
+        {
+          "key": "pendingToolRiskDiscardBody",
+          "english": " Resuming a transcript whose last step is an unanswered tool call forces the provider to drop or synthesize a result, losing whatever that run was doing."
+        },
+        {
+          "key": "pendingToolRiskCaveat",
+          "english": "YA cannot tell a program parked at a prompt from one that has exited — both leave the same unfinished tool call on disk — so this is a hedge, not a certainty. The safe move is to check the other program first."
+        },
+        {
+          "key": "sessionLoadingRenderingTranscript",
+          "english": "Rendering {count} messages..."
+        },
+        {
+          "key": "sessionProgressiveRenderingStatus",
+          "english": "Rendering transcript {percent}%..."
+        },
+        {
+          "key": "sessionProgressiveRenderingAriaLabel",
+          "english": "Transcript rendering progress"
+        },
+        {
+          "key": "sessionFollow",
+          "english": "Follow"
+        },
+        {
+          "key": "sessionFollowLatestOutput",
+          "english": "Follow latest session output"
+        },
+        {
+          "key": "sessionNewOutputBelow",
+          "english": "New output below"
+        },
+        {
+          "key": "sessionNewOutputBelowTitle",
+          "english": "Jump to latest session output"
+        },
+        {
+          "key": "sessionMenuOpenNewTab",
+          "english": "Open in new tab"
+        },
+        {
+          "key": "sessionMenuGenerateTitle",
+          "english": "Generate Title (uses tokens)"
+        },
+        {
+          "key": "sessionMenuPromptSuggestionsOn",
+          "english": "Suggestions: On"
+        },
+        {
+          "key": "sessionMenuPromptSuggestionsOff",
+          "english": "Suggestions: Off"
+        },
+        {
+          "key": "sessionMenuClear",
+          "english": "Clear (new session)"
+        },
+        {
+          "key": "messageInputCollapsedLineCount",
+          "english": "{count} lines"
+        },
+        {
+          "key": "forkSummaryComposerTitle",
+          "english": "Fork after selected turn"
+        },
+        {
+          "key": "forkSummaryComposerDescription",
+          "english": "Keep this request and the agent response to it; replace later turns with a generated summary."
+        },
+        {
+          "key": "forkSummaryComposerPlaceholder",
+          "english": "Optional summary instructions; leave empty for the default summary..."
+        },
+        {
+          "key": "forkSummarySubmit",
+          "english": "Fork with summary"
+        },
+        {
+          "key": "forkSummaryTooltip",
+          "english": "Fork after the selected turn with a generated summary"
+        },
+        {
+          "key": "forkSummaryNoSummarySubmit",
+          "english": "Fork without summary"
+        },
+        {
+          "key": "forkSummaryNoSummaryTooltip",
+          "english": "Fork after the selected turn without generating a summary (Ctrl+Enter)"
+        },
+        {
+          "key": "forkBeforeTurnLabel",
+          "english": "Fork session from before this turn"
+        },
+        {
+          "key": "forkBeforeTurnTooltip",
+          "english": "Fork session from before this turn (re-reads context at standard price if the session has been idle past the cache window)"
+        },
+        {
+          "key": "userPromptCopyAction",
+          "english": "Copy message text"
+        },
+        {
+          "key": "userPromptEditAction",
+          "english": "Edit latest message"
+        },
+        {
+          "key": "userPromptCancelUnconfirmedAction",
+          "english": "Cancel sent steering message"
+        },
+        {
+          "key": "userPromptDeliverySent",
+          "english": "Sent — waiting for the session to record it"
+        },
+        {
+          "key": "userPromptDeliverySentLabel",
+          "english": "sent"
+        },
+        {
+          "key": "userPromptDeliverySentDetail",
+          "english": "This message reached the server but isn't recorded in the session yet. A message sent while the agent was busy is recorded when the agent picks it up. The faint style and this tag disappear once it's confirmed."
+        },
+        {
+          "key": "userPromptShowStartingHere",
+          "english": "Show starting here"
+        },
+        {
+          "key": "forkSummaryCancel",
+          "english": "Cancel fork summary"
+        },
+        {
+          "key": "toolbarQueueShortLabel",
+          "english": "Queue"
+        },
+        {
+          "key": "toolbarSteerShortLabel",
+          "english": "Steer"
+        },
+        {
+          "key": "toolbarProjectQueueTooltipWithShortcut",
+          "english": "Send after all sessions in this project are idle\nCtrl+Enter"
+        },
+        {
+          "key": "toolbarConversationViewEnable",
+          "english": "Show Conversation view and condense routine activity"
+        },
+        {
+          "key": "toolbarConversationViewDisable",
+          "english": "Show the full activity transcript"
+        },
+        {
+          "key": "toolbarSteerNowLabel",
+          "english": "Steer now"
+        },
+        {
+          "key": "toolbarSteerNowShortLabel",
+          "english": "Now"
+        },
+        {
+          "key": "toolbarSteerNowTooltip",
+          "english": "Steer now interrupts in-flight generation without ending the turn."
+        },
+        {
+          "key": "toolbarOverflowMenu",
+          "english": "More toolbar controls"
+        },
+        {
+          "key": "slashCommandsLabel",
+          "english": "Slash commands"
+        },
+        {
+          "key": "slashCommandsShow",
+          "english": "Show slash commands"
+        },
+        {
+          "key": "showThinkingTitle",
+          "english": "Show thinking"
+        },
+        {
+          "key": "showThinkingHint",
+          "english": "Show the model's thinking. For some providers this is only a summary."
+        },
+        {
+          "key": "showThinkingDefault",
+          "english": "Default"
+        },
+        {
+          "key": "showThinkingDefaultShown",
+          "english": "shown"
+        },
+        {
+          "key": "showThinkingDefaultHidden",
+          "english": "hidden"
+        },
+        {
+          "key": "showThinkingOn",
+          "english": "On"
+        },
+        {
+          "key": "showThinkingOff",
+          "english": "Off"
+        },
+        {
+          "key": "toolbarProviderRuntimeRateLimited",
+          "english": "{provider} rate limited"
+        },
+        {
+          "key": "toolbarProviderRuntimeRetrying",
+          "english": "{provider} retrying"
+        },
+        {
+          "key": "toolbarProviderRuntimeStopped",
+          "english": "{provider} stopped"
+        },
+        {
+          "key": "toolbarProviderRuntimeStoppedReason",
+          "english": "{label}: {reason}"
+        },
+        {
+          "key": "toolbarProviderRuntimeRetryAt",
+          "english": "{label} - retry at {time}"
+        },
+        {
+          "key": "toolbarProviderRuntimeAria",
+          "english": "Provider runtime status: {summary}"
+        },
+        {
+          "key": "providerRuntimeRetryingTitle",
+          "english": "The provider will retry automatically."
+        },
+        {
+          "key": "providerRuntimeTerminalTitle",
+          "english": "This turn ended and will not retry automatically. Send again or choose another model."
+        },
+        {
+          "key": "providerRuntimeProcessTerminalTitle",
+          "english": "The provider process stopped and will not retry automatically. Send again to restart the session."
+        },
+        {
+          "key": "providerRuntimeReasonRateLimit",
+          "english": "Rate limit"
+        },
+        {
+          "key": "providerRuntimeReasonOverloaded",
+          "english": "Overloaded"
+        },
+        {
+          "key": "providerRuntimeReasonServerError",
+          "english": "Server error"
+        },
+        {
+          "key": "providerRuntimeReasonNetwork",
+          "english": "Network"
+        },
+        {
+          "key": "providerRuntimeReasonUnknown",
+          "english": "Unknown"
+        },
+        {
+          "key": "providerRuntimeReasonTitle",
+          "english": "reason: {reason}"
+        },
+        {
+          "key": "providerRuntimeHttpStatusTitle",
+          "english": "HTTP status: {status}"
+        },
+        {
+          "key": "providerRuntimeLastSeenTitle",
+          "english": "last seen: {time}"
+        },
+        {
+          "key": "providerRuntimeOccurredTitle",
+          "english": "occurred: {time}"
+        },
+        {
+          "key": "providerRuntimeSourceTitle",
+          "english": "source: {source}"
+        },
+        {
+          "key": "toolbarPositionAge",
+          "english": "at {age}"
+        },
+        {
+          "key": "toolbarPositionAgeAria",
+          "english": "Transcript position age"
+        },
+        {
+          "key": "sessionSearchHelpNavigate",
+          "english": "{shortcutKeys} prev · ↑↓ matches · click jumps"
+        },
+        {
+          "key": "sessionSearchHelpClose",
+          "english": "Enter jump+close · Esc cancel · Aa case"
+        },
+        {
+          "key": "toolbarShortcutQueueCurrentTurn",
+          "english": "Queue message"
+        },
+        {
+          "key": "toolbarShortcutProjectQueue",
+          "english": "Queue for Project Queue"
+        },
+        {
+          "key": "toolbarShortcutForkAfterSummary",
+          "english": "Fork after initial turn with summary"
+        },
+        {
+          "key": "toolbarShortcutRightClickLongPress",
+          "english": "Right-click / long-press ?"
+        },
+        {
+          "key": "toolbarShortcutChangeKeys",
+          "english": "Change keys"
+        },
+        {
+          "key": "toolbarShortcutSwapEnterCtrlEnter",
+          "english": "Swap Enter and Ctrl+Enter"
+        },
+        {
+          "key": "toolbarShortcutToggleThinkingTranscript",
+          "english": "Show / hide Thinking rows"
+        },
+        {
+          "key": "conversationActivitySingular",
+          "english": "activity"
+        },
+        {
+          "key": "conversationActivityPlural",
+          "english": "activities"
+        },
+        {
+          "key": "conversationActivityActive",
+          "english": "Working {duration} · {count} {activity}"
+        },
+        {
+          "key": "conversationActivityActiveWithoutTime",
+          "english": "Working · {count} {activity}"
+        },
+        {
+          "key": "conversationActivityComplete",
+          "english": "{duration} elapsed · {count} {activity} hidden"
+        },
+        {
+          "key": "conversationActivityCompleteWithoutTime",
+          "english": "{count} {activity} hidden"
+        },
+        {
+          "key": "conversationActivityExpandTitle",
+          "english": "Show hidden activity in its original positions"
+        },
+        {
+          "key": "conversationActivityCollapseTitle",
+          "english": "Collapse this turn's routine activity"
+        },
+        {
+          "key": "processInfoSectionProviderRuntime",
+          "english": "Provider Runtime"
+        },
+        {
+          "key": "processInfoLabelLiveness",
+          "english": "Liveness"
+        },
+        {
+          "key": "processInfoLabelProviderRetention",
+          "english": "Provider retention"
+        },
+        {
+          "key": "processInfoLabelLastWake",
+          "english": "Last wake"
+        },
+        {
+          "key": "processInfoLabelWakeMessage",
+          "english": "Wake message"
+        },
+        {
+          "key": "processInfoLabelRuntimeStatus",
+          "english": "Status"
+        },
+        {
+          "key": "processInfoLabelRuntimeReason",
+          "english": "Reason"
+        },
+        {
+          "key": "processInfoLabelRuntimeHttpStatus",
+          "english": "HTTP status"
+        },
+        {
+          "key": "processInfoLabelRuntimeRetryAt",
+          "english": "Retry at"
+        },
+        {
+          "key": "processInfoLabelRuntimeRetryDelay",
+          "english": "Retry delay"
+        },
+        {
+          "key": "processInfoLabelRuntimeStarted",
+          "english": "Started"
+        },
+        {
+          "key": "processInfoLabelRuntimeLastSeen",
+          "english": "Last seen"
+        },
+        {
+          "key": "processInfoLabelRuntimeOccurred",
+          "english": "Occurred"
+        },
+        {
+          "key": "processInfoLabelRuntimeMessage",
+          "english": "Message"
+        },
+        {
+          "key": "processInfoLabelRuntimeDetails",
+          "english": "Details"
+        },
+        {
+          "key": "processInfoLabelRuntimeAttempt",
+          "english": "Attempt"
+        },
+        {
+          "key": "processInfoLabelRuntimeMaxRetries",
+          "english": "Max retries"
+        },
+        {
+          "key": "processInfoLabelRuntimeEventCount",
+          "english": "Events"
+        },
+        {
+          "key": "processInfoLabelRuntimeSource",
+          "english": "Source"
+        },
+        {
+          "key": "processInfoRuntimeRetrying",
+          "english": "Retrying provider request"
+        },
+        {
+          "key": "processInfoRuntimeTerminal",
+          "english": "Turn ended; no automatic retry"
+        },
+        {
+          "key": "processInfoRuntimeProcessTerminal",
+          "english": "Provider process stopped; no automatic retry"
+        },
+        {
+          "key": "processInfoRuntimeUnbounded",
+          "english": "Unbounded"
+        },
+        {
+          "key": "gitStatusCheckRemoteShort",
+          "english": "Check"
+        },
+        {
+          "key": "gitStatusLoadUntrackedFolderFailed",
+          "english": "Failed to load untracked folder"
+        },
+        {
+          "key": "gitStatusUntrackedFolderCount",
+          "english": "{count} files"
+        },
+        {
+          "key": "gitStatusUntrackedFolderCountTruncated",
+          "english": "Showing first {count} files"
+        },
+        {
+          "key": "gitStatusUntrackedFolderEmpty",
+          "english": "No untracked files found"
+        },
+        {
+          "key": "diffViewModeAuto",
+          "english": "Auto"
+        },
+        {
+          "key": "diffViewModeUnified",
+          "english": "Unified"
+        },
+        {
+          "key": "diffViewModeSideBySide",
+          "english": "Side-by-side"
+        },
+        {
+          "key": "diffViewModeTitle",
+          "english": "Diff layout: auto, unified, or side-by-side"
+        },
+        {
+          "key": "cancel",
+          "english": "Cancel"
+        },
+        {
+          "key": "loading",
+          "english": "Loading…"
+        },
+        {
+          "key": "toolResultMediaAlt",
+          "english": "{filename} tool result"
+        },
+        {
+          "key": "toolResultMediaCollapse",
+          "english": "Collapse image preview"
+        },
+        {
+          "key": "toolResultMediaExpand",
+          "english": "Expand image preview"
+        },
+        {
+          "key": "toolResultMediaImage",
+          "english": "image"
+        },
+        {
+          "key": "toolResultMediaInvalidImageData",
+          "english": "The tool returned invalid image data."
+        },
+        {
+          "key": "toolResultMediaLoadFailed",
+          "english": "Image unavailable"
+        },
+        {
+          "key": "toolResultMediaLoading",
+          "english": "Loading image…"
+        },
+        {
+          "key": "toolResultMediaOpen",
+          "english": "Open {filename}"
+        },
+        {
+          "key": "toolResultMediaSourceUnavailable",
+          "english": "The source image is no longer available."
+        },
+        {
+          "key": "toolResultMediaStorageUnavailable",
+          "english": "The image could not be stored safely."
+        },
+        {
+          "key": "toolResultMediaTooLarge",
+          "english": "The image is too large to store."
+        },
+        {
+          "key": "toolResultMediaUnavailable",
+          "english": "image unavailable"
+        },
+        {
+          "key": "toolResultMediaUnnamed",
+          "english": "tool result image {number}"
+        },
+        {
+          "key": "toolResultMediaUnsupportedMedia",
+          "english": "The returned image format is unsupported."
+        },
+        {
+          "key": "sourceReviewAddToReview",
+          "english": "Add to review"
+        },
+        {
+          "key": "sourceReviewOpenDirtyFile",
+          "english": "Review"
+        },
+        {
+          "key": "sourceReviewSubmitToDefault",
+          "english": "Submit to current session"
+        },
+        {
+          "key": "sourceReviewSubmitToNew",
+          "english": "Submit to new session"
+        },
+        {
+          "key": "sourceReviewCommentPlaceholder",
+          "english": "Comment on this line…"
+        },
+        {
+          "key": "sourceReviewSubmitQueued",
+          "english": "Queued — the server is busy; the comment is still pending."
+        },
+        {
+          "key": "sourceReviewReview",
+          "english": "Review ({count})"
+        },
+        {
+          "key": "sourceReviewStart",
+          "english": "Review"
+        },
+        {
+          "key": "sourceReviewSubmitTitle",
+          "english": "Submit review"
+        },
+        {
+          "key": "sourceReviewNoPending",
+          "english": "No pending comments."
+        },
+        {
+          "key": "sourceReviewStale",
+          "english": "context gone"
+        },
+        {
+          "key": "sourceReviewMoved",
+          "english": "moved"
+        },
+        {
+          "key": "sourceReviewTargetLegend",
+          "english": "Send to"
+        },
+        {
+          "key": "sourceReviewTargetRecent",
+          "english": "Recent review session"
+        },
+        {
+          "key": "sourceReviewTargetNew",
+          "english": "New review session"
+        },
+        {
+          "key": "sourceReviewTargetOther",
+          "english": "Another session"
+        },
+        {
+          "key": "sourceReviewRecentSuffix",
+          "english": "recent review"
+        },
+        {
+          "key": "sourceReviewSessionsUnavailable",
+          "english": "Existing sessions unavailable"
+        },
+        {
+          "key": "sourceReviewProvider",
+          "english": "Provider"
+        },
+        {
+          "key": "sourceReviewModel",
+          "english": "Model"
+        },
+        {
+          "key": "sourceReviewModelDefault",
+          "english": "Provider default"
+        },
+        {
+          "key": "sourceReviewSubmitReview",
+          "english": "Submit {count}"
+        },
+        {
+          "key": "sourceReviewCommentsHint",
+          "english": "Click a line in a diff or in a file's blame to draft a comment."
+        },
+        {
+          "key": "sourceReviewDelete",
+          "english": "Delete"
+        },
+        {
+          "key": "sourceReviewDeleteConfirm",
+          "english": "Confirm delete"
+        },
+        {
+          "key": "sourceReviewOpenInFiles",
+          "english": "Open this file's blame"
+        },
+        {
+          "key": "sourceReviewOpenSubmit",
+          "english": "Submit review…"
+        },
+        {
+          "key": "sourceTabChanges",
+          "english": "Changes"
+        },
+        {
+          "key": "sourceTabCommits",
+          "english": "Commits"
+        },
+        {
+          "key": "sourceTabFiles",
+          "english": "Files"
+        },
+        {
+          "key": "sourceTabComments",
+          "english": "Comments"
+        },
+        {
+          "key": "sourceCopyBranch",
+          "english": "Copy branch name"
+        },
+        {
+          "key": "sourceCopyCommitHash",
+          "english": "Copy commit hash"
+        },
+        {
+          "key": "sourceCopyCommitSubject",
+          "english": "Copy commit subject"
+        },
+        {
+          "key": "sourceCopyRevisionLabel",
+          "english": "Copy revision label"
+        },
+        {
+          "key": "sourceCopyPath",
+          "english": "Copy path"
+        },
+        {
+          "key": "sourceOpenFile",
+          "english": "Open file"
+        },
+        {
+          "key": "sourceCopyLine",
+          "english": "Copy line"
+        },
+        {
+          "key": "sourceCopyPathLine",
+          "english": "Copy path and line number"
+        },
+        {
+          "key": "sourceCommentOnLine",
+          "english": "Comment on this line"
+        },
+        {
+          "key": "sourceDiffLineActions",
+          "english": "Diff line. Press Enter to comment or Shift+F10 for actions."
+        },
+        {
+          "key": "sourceMoreActions",
+          "english": "More actions"
+        },
+        {
+          "key": "sourceActionMenu",
+          "english": "Source actions"
+        },
+        {
+          "key": "sourceDismissActions",
+          "english": "Dismiss actions"
+        },
+        {
+          "key": "sourceResizeRevisionPane",
+          "english": "Resize revision pane"
+        },
+        {
+          "key": "sourceResizeFilePane",
+          "english": "Resize file pane"
+        },
+        {
+          "key": "sourceShortcutHelp",
+          "english": "Keyboard shortcuts"
+        },
+        {
+          "key": "sourceShortcutSearch",
+          "english": "Search commits"
+        },
+        {
+          "key": "sourceShortcutNavigate",
+          "english": "Navigate rows"
+        },
+        {
+          "key": "sourceShortcutOpen",
+          "english": "Open selection"
+        },
+        {
+          "key": "sourceShortcutBack",
+          "english": "Back or clear"
+        },
+        {
+          "key": "sourceShortcutHunks",
+          "english": "Previous or next hunk"
+        },
+        {
+          "key": "sourceShortcutActions",
+          "english": "Open actions"
+        },
+        {
+          "key": "sourceLoadMore",
+          "english": "Load more"
+        },
+        {
+          "key": "sourceNoCommits",
+          "english": "No commits."
+        },
+        {
+          "key": "sourceWorkingTree",
+          "english": "Working tree"
+        },
+        {
+          "key": "sourceWorkingTreeDescription",
+          "english": "Current uncommitted changes against HEAD"
+        },
+        {
+          "key": "sourceOpenChanges",
+          "english": "Show working tree changes"
+        },
+        {
+          "key": "sourceBackToCommits",
+          "english": "Back to commits"
+        },
+        {
+          "key": "sourceUncommitted",
+          "english": "Uncommitted"
+        },
+        {
+          "key": "sourceChangedFileCount",
+          "english": "{count} changed file(s)"
+        },
+        {
+          "key": "sourceWorktreeStaged",
+          "english": "staged"
+        },
+        {
+          "key": "sourceWorktreeUnstaged",
+          "english": "unstaged"
+        },
+        {
+          "key": "sourceWorktreeBoth",
+          "english": "staged + unstaged"
+        },
+        {
+          "key": "sourceWorktreeUntracked",
+          "english": "untracked"
+        },
+        {
+          "key": "sourceWorktreePartial",
+          "english": "partial"
+        },
+        {
+          "key": "sourceWorktreePartialDescription",
+          "english": "Partially staged: staged changes plus additional unstaged changes."
+        },
+        {
+          "key": "sourceFileStatusModified",
+          "english": "Modified"
+        },
+        {
+          "key": "sourceFileStatusAdded",
+          "english": "Added"
+        },
+        {
+          "key": "sourceFileStatusDeleted",
+          "english": "Deleted"
+        },
+        {
+          "key": "sourceFileStatusRenamed",
+          "english": "Renamed"
+        },
+        {
+          "key": "sourceFileStatusCopied",
+          "english": "Copied"
+        },
+        {
+          "key": "sourceFileStatusTypeChanged",
+          "english": "Type changed"
+        },
+        {
+          "key": "sourceFileStatusUnmerged",
+          "english": "Unmerged"
+        },
+        {
+          "key": "sourceFileStatusUntracked",
+          "english": "Untracked"
+        },
+        {
+          "key": "sourceFileStatusChanged",
+          "english": "Changed"
+        },
+        {
+          "key": "sourceFilterFiles",
+          "english": "Filter files…"
+        },
+        {
+          "key": "sourceNoFiles",
+          "english": "No files."
+        },
+        {
+          "key": "sourceFilesTruncated",
+          "english": "Showing {shown} of {total}"
+        },
+        {
+          "key": "sourceBlameNotCommitted",
+          "english": "Not committed yet"
+        },
+        {
+          "key": "sourceBlameTruncated",
+          "english": "File too large to blame in full."
+        },
+        {
+          "key": "sourceSearchCommits",
+          "english": "Search commit changes…"
+        },
+        {
+          "key": "sourceSearching",
+          "english": "Searching…"
+        },
+        {
+          "key": "sourcePreparingCommitIndex",
+          "english": "Preparing commit history…"
+        },
+        {
+          "key": "sourceIndexingCommits",
+          "english": "Indexing commit history… {indexed} of {total}"
+        },
+        {
+          "key": "sourceNoMatches",
+          "english": "No matches."
+        },
+        {
+          "key": "sourceMarkReadToHere",
+          "english": "Mark read to here"
+        },
+        {
+          "key": "sourceMarkUnreadSinceHere",
+          "english": "Mark unread since here"
+        },
+        {
+          "key": "sourceCommentCount",
+          "english": "{count} pending review comment(s)"
+        },
+        {
+          "key": "sourceShowFullMessage",
+          "english": "Show the full original commit message"
+        },
+        {
+          "key": "sourceCommitMessage",
+          "english": "commit message"
+        },
+        {
+          "key": "sourceNewerCommit",
+          "english": "↑ Newer"
+        },
+        {
+          "key": "sourceOlderCommit",
+          "english": "Older ↓"
+        },
+        {
+          "key": "sourceBlameAtHead",
+          "english": "Blame this file as of HEAD"
+        },
+        {
+          "key": "sourceBlameAtHeadShort",
+          "english": "blame"
+        },
+        {
+          "key": "sourceCompareToHead",
+          "english": "To HEAD"
+        },
+        {
+          "key": "sourceCompareToHeadDescription",
+          "english": "Show the direct diff from this revision to current HEAD"
+        },
+        {
+          "key": "sourceNoChangesToHead",
+          "english": "This revision and HEAD have no content differences."
+        },
+        {
+          "key": "sourceProjectionUpgradeNotice",
+          "english": "Update or restart the yepanywhere server to use Ignore whitespace and To HEAD. Ordinary Source Control still works."
+        },
+        {
+          "key": "sourceDismissProjectionNotice",
+          "english": "Dismiss server update notice"
+        },
+        {
+          "key": "sourceHunkPosition",
+          "english": "{current} of {total}"
+        },
+        {
+          "key": "sourcePreviousHunkShortcut",
+          "english": "Previous hunk (P)"
+        },
+        {
+          "key": "sourceNextHunkShortcut",
+          "english": "Next hunk (N)"
+        },
+        {
+          "key": "gitStatusRecentCommits",
+          "english": "Recent commits"
+        },
+        {
+          "key": "gitStatusNoRecentCommits",
+          "english": "No commits yet"
+        },
+        {
+          "key": "gitStatusUntitledCommit",
+          "english": "(no subject)"
+        },
+        {
+          "key": "gitStatusDiffPreview",
+          "english": "Diff preview"
+        },
+        {
+          "key": "gitStatusSelectFileForDiff",
+          "english": "Select a file to preview changes"
+        },
+        {
+          "key": "gitStatusIgnoreWhitespace",
+          "english": "Ignore whitespace"
+        },
+        {
+          "key": "gitStatusWhitespaceChangesHidden",
+          "english": "Whitespace-only changes are hidden."
+        },
+        {
+          "key": "gitStatusNoContentChanges",
+          "english": "No content changes."
+        },
+        {
+          "key": "gitStatusDiffPreviewSkipped",
+          "english": "Preview skipped"
+        },
+        {
+          "key": "gitStatusDiffPreviewSkippedContentTooLarge",
+          "english": "The selected file is too large to preview safely."
+        },
+        {
+          "key": "gitStatusDiffPreviewSkippedLineTooLong",
+          "english": "The selected file has a line that is too long to preview safely."
+        },
+        {
+          "key": "gitStatusDiffPreviewSkippedHtmlTooLarge",
+          "english": "The highlighted diff is too large to render safely."
+        },
+        {
+          "key": "gitStatusDiffPreviewSkippedPath",
+          "english": "File"
+        },
+        {
+          "key": "gitStatusDiffPreviewSkippedSize",
+          "english": "Size"
+        },
+        {
+          "key": "gitStatusDiffPreviewSkippedLineLength",
+          "english": "Longest line"
+        },
+        {
+          "key": "gitStatusDiffPreviewSkippedHtmlSize",
+          "english": "HTML size"
+        },
+        {
+          "key": "gitStatusUpgradeRequiredTitle",
+          "english": "Source Control needs a server update"
+        },
+        {
+          "key": "gitStatusUpgradeRequiredDescription",
+          "english": "This browser has a newer Source Control page, but this yepanywhere server does not advertise support for it. Upgrade the yepanywhere server, then reload this page."
+        },
+        {
+          "key": "gitStatusCompatibilityTitle",
+          "english": "Basic Source Control"
+        },
+        {
+          "key": "gitStatusCompatibilityDescription",
+          "english": "This server supports repository status and the available actions above. Update the yepanywhere server to add commit history, file browsing, and source review."
+        },
+        {
+          "key": "gitStatusLastCheckedRemote",
+          "english": "Last checked remote: {time}"
+        },
+        {
+          "key": "gitStatusRemoteUnknown",
+          "english": "unknown"
+        },
+        {
+          "key": "gitStatusRemoteJustNow",
+          "english": "just now"
+        },
+        {
+          "key": "gitStatusRemoteMinutesAgo",
+          "english": "{count}m ago"
+        },
+        {
+          "key": "gitStatusRemoteHoursAgo",
+          "english": "{count}h ago"
+        },
+        {
+          "key": "gitStatusCheckRemote",
+          "english": "Check remote"
+        },
+        {
+          "key": "gitStatusCheckingRemote",
+          "english": "Checking..."
+        },
+        {
+          "key": "gitStatusRemoteCheckSuccess",
+          "english": "Remote checked"
+        },
+        {
+          "key": "gitStatusRemoteCheckBusy",
+          "english": "Another git action is already running"
+        },
+        {
+          "key": "gitStatusRemoteCheckFailed",
+          "english": "Remote check failed"
+        },
+        {
+          "key": "gitStatusRemoteCheckNotRepo",
+          "english": "Not a git repository"
+        },
+        {
+          "key": "gitStatusPull",
+          "english": "Pull"
+        },
+        {
+          "key": "gitStatusPulling",
+          "english": "Pulling..."
+        },
+        {
+          "key": "gitStatusPullSuccess",
+          "english": "Pull complete"
+        },
+        {
+          "key": "gitStatusPullBusy",
+          "english": "Another git action is already running"
+        },
+        {
+          "key": "gitStatusPullDiverged",
+          "english": "Pull needs attention: branch diverged. Local commits: {ahead}. Remote commits: {behind}. A fast-forward pull cannot apply. Use a terminal or ask an agent to rebase or merge."
+        },
+        {
+          "key": "gitStatusPullFailed",
+          "english": "Pull needs attention"
+        },
+        {
+          "key": "gitStatusPullNotRepo",
+          "english": "Not a git repository"
+        },
+        {
+          "key": "gitStatusPush",
+          "english": "Push"
+        },
+        {
+          "key": "gitStatusPushing",
+          "english": "Pushing..."
+        },
+        {
+          "key": "gitStatusPushSuccess",
+          "english": "Pushed commits"
+        },
+        {
+          "key": "gitStatusPushPublished",
+          "english": "Branch published"
+        },
+        {
+          "key": "gitStatusPushAlreadyUpToDate",
+          "english": "Already up to date"
+        },
+        {
+          "key": "gitStatusPushBusy",
+          "english": "Another git action is already running"
+        },
+        {
+          "key": "gitStatusPushFailed",
+          "english": "Push needs attention"
+        },
+        {
+          "key": "gitStatusPushNoUpstream",
+          "english": "Push needs attention"
+        },
+        {
+          "key": "gitStatusPushDiverged",
+          "english": "Push needs attention: branch diverged. Local commits: {ahead}. Remote commits: {behind}. Use a terminal or ask an agent to rebase or merge before pushing."
+        },
+        {
+          "key": "gitStatusPushRejected",
+          "english": "Push rejected; remote has newer commits"
+        },
+        {
+          "key": "gitStatusPushNotRepo",
+          "english": "Not a git repository"
+        },
+        {
+          "key": "gitStatusAutoOptionsChecking",
+          "english": "Checking automatic options..."
+        },
+        {
+          "key": "gitStatusAutoOptionsFailed",
+          "english": "Automatic rebase/merge check failed."
+        },
+        {
+          "key": "gitStatusAutoOptionsLabel",
+          "english": "Try automatically:"
+        },
+        {
+          "key": "gitStatusAutoRebase",
+          "english": "Rebase"
+        },
+        {
+          "key": "gitStatusAutoMerge",
+          "english": "Merge"
+        },
+        {
+          "key": "gitStatusAutoActionNotEnabled",
+          "english": "Automatic rebase/merge actions are not enabled yet."
+        },
+        {
+          "key": "gitStatusAutoHelpLabel",
+          "english": "About automatic rebase and merge"
+        },
+        {
+          "key": "gitStatusAutoHelp",
+          "english": "Automatic rebase or merge requires a clean worktree and should abort if Git cannot apply cleanly. It does not run tests."
+        },
+        {
+          "key": "gitStatusAutoOptionsUnavailable",
+          "english": "Automatic rebase/merge unavailable: {reason}."
+        },
+        {
+          "key": "gitStatusAutoReasonOperationRunning",
+          "english": "another git action is already running"
+        },
+        {
+          "key": "gitStatusAutoReasonSequencer",
+          "english": "an unfinished merge, rebase, or cherry-pick exists"
+        },
+        {
+          "key": "gitStatusAutoReasonDirty",
+          "english": "worktree has uncommitted changes"
+        },
+        {
+          "key": "gitStatusAutoReasonMissingUpstream",
+          "english": "branch has no upstream"
+        },
+        {
+          "key": "gitStatusAutoReasonDetached",
+          "english": "HEAD is detached"
+        },
+        {
+          "key": "gitStatusAutoReasonNotDiverged",
+          "english": "branch is not diverged"
+        },
+        {
+          "key": "gitStatusAutoReasonNotRepo",
+          "english": "not a git repository"
+        },
+        {
+          "key": "gitStatusAutoReasonStatusUnavailable",
+          "english": "status could not be checked"
+        },
+        {
+          "key": "effortChangeApplyFailed",
+          "english": "Failed to apply the selected effort. Queued work remains paused; choose an effort again to retry."
+        },
+        {
+          "key": "modelSwitchActivate",
+          "english": "Activate"
+        },
+        {
+          "key": "modelSwitchActivating",
+          "english": "Activating…"
+        },
+        {
+          "key": "modelSwitchActivateFailed",
+          "english": "Failed to activate session"
+        },
+        {
+          "key": "modelSwitchNextSend",
+          "english": "Next message"
+        },
+        {
+          "key": "sessionRestartModeTitle",
+          "english": "Restart mode"
+        },
+        {
+          "key": "sessionRestartModeHandoff",
+          "english": "Handoff"
+        },
+        {
+          "key": "sessionRestartModeHandoffDescription",
+          "english": "New session seeded with a transcript summary"
+        },
+        {
+          "key": "sessionRestartModeFork",
+          "english": "Fork"
+        },
+        {
+          "key": "sessionRestartModeForkDescription",
+          "english": "Copy the conversation into a new session (same provider, context preserved)"
+        },
+        {
+          "key": "sessionRestartStartFork",
+          "english": "Start fork"
+        },
+        {
+          "key": "sessionRestartForking",
+          "english": "Starting fork..."
+        },
+        {
+          "key": "sessionRestartForkKeepsProvider",
+          "english": "Fork keeps the conversation on {provider}"
+        },
+        {
+          "key": "forkFromTurnStarted",
+          "english": "Forked session created"
+        },
+        {
+          "key": "forkFromTurnNoAnchor",
+          "english": "No earlier loaded turn to fork from"
+        },
+        {
+          "key": "forkAfterTurnPending",
+          "english": "Wait for the agent response to finish before forking after this turn."
+        },
+        {
+          "key": "forkAfterTurnNoAnchor",
+          "english": "No completed turn boundary is loaded for this fork."
+        },
+        {
+          "key": "forkSummaryStarted",
+          "english": "Forking in the background…"
+        },
+        {
+          "key": "forkSummaryFailed",
+          "english": "Failed to fork with summary"
+        },
+        {
+          "key": "forkSummaryAttachmentsUnsupported",
+          "english": "Fork summary instructions cannot include attachments."
+        },
+        {
+          "key": "forkSummaryProgress",
+          "english": "Forking…"
+        },
+        {
+          "key": "forkSummaryCancelInFlight",
+          "english": "Cancel"
+        },
+        {
+          "key": "forkSummaryReadyOpen",
+          "english": "Forked — open the new session"
+        },
+        {
+          "key": "forkSummaryOpenedNewTab",
+          "english": "Forked, opened in a new tab"
+        },
+        {
+          "key": "forkSummaryReadyFallbackTitle",
+          "english": "forked session"
+        },
+        {
+          "key": "forkSummaryDismiss",
+          "english": "Dismiss"
+        },
+        {
+          "key": "forkSummaryAutoOpenToggle",
+          "english": "Open in new tab when ready"
+        },
+        {
+          "key": "forkSummaryReadyPrefix",
+          "english": "Forked:"
+        },
+        {
+          "key": "forkSummaryOpenedMarker",
+          "english": "(tab opened)"
+        },
+        {
+          "key": "forkSummaryClicked",
+          "english": "(clicked)"
+        },
+        {
+          "key": "bangBlockAriaLabel",
+          "english": "Local command run"
+        },
+        {
+          "key": "bangOutputAriaLabel",
+          "english": "Command output"
+        },
+        {
+          "key": "bangRunning",
+          "english": "running…"
+        },
+        {
+          "key": "bangExitCode",
+          "english": "exit {code}"
+        },
+        {
+          "key": "bangCancel",
+          "english": "Cancel"
+        },
+        {
+          "key": "bangRaw",
+          "english": "Raw"
+        },
+        {
+          "key": "bangRendered",
+          "english": "Rendered"
+        },
+        {
+          "key": "bangStderrLabel",
+          "english": "stderr"
+        },
+        {
+          "key": "bangTruncatedNote",
+          "english": "Output truncated; stored output is capped."
+        },
+        {
+          "key": "bangRecall",
+          "english": "Recall"
+        },
+        {
+          "key": "bangRecallTitle",
+          "english": "Draft this command in the composer (Ctrl+↑ cycles history)"
+        },
+        {
+          "key": "bangRerun",
+          "english": "Re-run"
+        },
+        {
+          "key": "bangEcho",
+          "english": "Echo to session"
+        },
+        {
+          "key": "bangEchoTitle",
+          "english": "Send command and output to the agent as a user turn"
+        },
+        {
+          "key": "bangDelete",
+          "english": "Delete"
+        },
+        {
+          "key": "bangLoadOutput",
+          "english": "Load output"
+        },
+        {
+          "key": "bangLoadingOutput",
+          "english": "Loading output…"
+        },
+        {
+          "key": "bangHideOutput",
+          "english": "Hide output"
+        },
+        {
+          "key": "bangRetryOutput",
+          "english": "Retry output"
+        },
+        {
+          "key": "bangComposerChip",
+          "english": "!! local command — runs in the project directory, not sent to the agent"
+        },
+        {
+          "key": "bangComposerEscapedChip",
+          "english": "leading space: sends as ordinary message text"
+        },
+        {
+          "key": "bangEmptyCommand",
+          "english": "Add a command after !!"
+        },
+        {
+          "key": "bangTabCompleteLabel",
+          "english": "Tab-complete command"
+        },
+        {
+          "key": "bangRunFailed",
+          "english": "Failed to start local command"
+        },
+        {
+          "key": "bangEchoFailed",
+          "english": "Failed to load command output for echo"
+        },
+        {
+          "key": "bangHistoryTitle",
+          "english": "!! Command History"
+        },
+        {
+          "key": "bangHistoryEmpty",
+          "english": "No local commands have been run yet."
+        },
+        {
+          "key": "bangHistoryOpenSession",
+          "english": "Open session"
+        },
+        {
+          "key": "bangHistoryActionEdit",
+          "english": "Edit / re-issue command"
+        },
+        {
+          "key": "bangHistoryActionNew",
+          "english": "New command in session"
+        },
+        {
+          "key": "bangHistoryActionJump",
+          "english": "Jump to command in session"
+        },
+        {
+          "key": "composerRecallMenuLabel",
+          "english": "Recall a previous message"
+        },
+        {
+          "key": "composerRecallOpenButton",
+          "english": "Recall a previous message"
+        },
+        {
+          "key": "composerRecallGoToTurn",
+          "english": "Go to this turn"
+        },
+        {
+          "key": "sidebarBangCommands",
+          "english": "!! Commands"
+        },
+        {
+          "key": "turnNotchJump",
+          "english": "Jump"
+        },
+        {
+          "key": "turnNotchForkBefore",
+          "english": "Fork before…"
+        },
+        {
+          "key": "turnNotchForkAfter",
+          "english": "Fork after…"
+        },
+        {
+          "key": "turnNotchCopy",
+          "english": "Copy"
+        },
+        {
+          "key": "turnNotchShowFrom",
+          "english": "Show from"
+        },
+        {
+          "key": "turnNotchDismissMenu",
+          "english": "Dismiss menu"
+        },
+        {
+          "key": "turnNotchJumpToTurn",
+          "english": "Jump to turn"
+        },
+        {
+          "key": "turnNotchShowFromTurn",
+          "english": "Load client transcript from turn"
+        },
+        {
+          "key": "modelSettingsForkSummaryAutoOpenTitle",
+          "english": "Forked sessions"
+        },
+        {
+          "key": "modelSettingsForkSummaryAutoOpenDescription",
+          "english": "When a fork-after-summary finishes, the forked session can open automatically in a new tab. When off, a link appears instead. (In a session, right-click the turn dashes beside the right scrollbar to fork before or after a turn.)"
+        },
+        {
+          "key": "modelSettingsForkSummaryAutoOpenLabel",
+          "english": "Open forked session in a new tab when ready"
+        },
+        {
+          "key": "reloadBannerCodeChangedCompact",
+          "english": "{target} changed"
+        },
+        {
+          "key": "reloadBannerTargetServer",
+          "english": "Server"
+        },
+        {
+          "key": "reloadBannerTargetFrontend",
+          "english": "Frontend"
+        },
+        {
+          "key": "reloadBannerReloadTarget",
+          "english": "Reload {target}"
+        },
+        {
+          "key": "reloadBannerReloadTargetCompact",
+          "english": "Reload"
+        },
+        {
+          "key": "reloadBannerReloadNow",
+          "english": "Reload Now"
+        },
+        {
+          "key": "reloadBannerReloadAnyway",
+          "english": "Reload Anyway"
+        },
+        {
+          "key": "reloadBannerDismiss",
+          "english": "Dismiss"
+        },
+        {
+          "key": "reloadBannerRestartWhenSafe",
+          "english": "Reload When Safe"
+        },
+        {
+          "key": "reloadBannerRestartWhenSafeCompact",
+          "english": "Safe"
+        },
+        {
+          "key": "reloadBannerCancelSafeRestart",
+          "english": "Cancel Restart"
+        },
+        {
+          "key": "reloadBannerCancelSafeRestartCompact",
+          "english": "Cancel"
+        },
+        {
+          "key": "reloadBannerStatusActiveAndQueuedCompact",
+          "english": "{activeCount} active, {queuedCount} queued"
+        },
+        {
+          "key": "reloadBannerStatusActiveCompact",
+          "english": "{count} active"
+        },
+        {
+          "key": "reloadBannerStatusQueuedCompact",
+          "english": "{count} queued"
+        },
+        {
+          "key": "reloadBannerSafeRestartReadyCompact",
+          "english": "Ready"
+        },
+        {
+          "key": "reloadBannerSafeRestartRestartingCompact",
+          "english": "Restarting"
+        },
+        {
+          "key": "reloadBannerSafeRestartWaitingActiveAndQueued",
+          "english": "Restart scheduled - waiting for {activeCount} active session{activeSuffix} and {queuedCount} queued message{queuedSuffix}"
+        },
+        {
+          "key": "reloadBannerSafeRestartWaitingActive",
+          "english": "Restart scheduled - waiting for {count} active session{suffix}"
+        },
+        {
+          "key": "reloadBannerSafeRestartWaitingQueued",
+          "english": "Restart scheduled - waiting for {count} queued message{suffix}"
+        },
+        {
+          "key": "reloadBannerSafeRestartReady",
+          "english": "Restart scheduled - restarting now"
+        },
+        {
+          "key": "reloadBannerSafeRestartRestarting",
+          "english": "Restarting when safe..."
+        },
+        {
+          "key": "reloadBannerSafeRestartPreservedRecoveredQueue",
+          "english": "{count} recovered patient queued message{suffix} preserved for manual resume."
+        },
+        {
+          "key": "bulkSelectAllFilteredTitle",
+          "english": "Select all {count} filtered sessions"
+        },
+        {
+          "key": "bulkSelectAllFiltered",
+          "english": "Select all {count}"
+        },
+        {
+          "key": "relayLoginRelayHostPreview",
+          "english": "relay: {host}"
+        },
+        {
+          "key": "relayLoginErrorServerOfflineWithRelay",
+          "english": "Server is not connected to {relayUrl}. Make sure your server is running and using that relay."
+        },
+        {
+          "key": "notificationsProjectInactiveTitle",
+          "english": "Project Inactive"
+        },
+        {
+          "key": "notificationsProjectInactiveDescription",
+          "english": "Notify when a project has no active sessions, queued work, or background tasks."
+        },
+        {
+          "key": "notificationsYaInactiveTitle",
+          "english": "YA Inactive"
+        },
+        {
+          "key": "notificationsYaInactiveDescription",
+          "english": "Notify when all projects are inactive and no YA-managed work remains."
+        },
+        {
+          "key": "notificationsTestPushTitle",
+          "english": "Test Push Delivery"
+        },
+        {
+          "key": "notificationsTestPushDescription",
+          "english": "These settings apply to the mobile bulk send and every device Test button below."
+        },
+        {
+          "key": "notificationsSendToMobileDevices",
+          "english": "Send to mobile ({count})"
+        },
+        {
+          "key": "notificationsNoMobilePushDevices",
+          "english": "No subscribed mobile push devices"
+        },
+        {
+          "key": "notificationsTest",
+          "english": "Test"
+        },
+        {
+          "key": "notificationsTestDevice",
+          "english": "Send a test push to this device"
+        },
+        {
+          "key": "notificationsTestSentToDevice",
+          "english": "Sent test push to {device}."
+        },
+        {
+          "key": "notificationsTestSentToMobile",
+          "english": "Sent test push to {count} mobile device(s)."
+        },
+        {
+          "key": "notificationsTestPartialFailure",
+          "english": "Failed to send to {failed} of {total} device(s)."
+        },
+        {
+          "key": "notificationsTestFailed",
+          "english": "Failed to send test push."
+        },
+        {
+          "key": "pushToggleDisplayBehavior",
+          "english": "Display behavior"
+        },
+        {
+          "key": "pushTestDeliveryPriority",
+          "english": "Web Push priority"
+        },
+        {
+          "key": "pushDeliveryHigh",
+          "english": "High priority"
+        },
+        {
+          "key": "pushDeliveryNormal",
+          "english": "Normal priority"
+        },
+        {
+          "key": "pushDeliveryLow",
+          "english": "Low priority"
+        },
+        {
+          "key": "pushDeliveryVeryLow",
+          "english": "Very low priority"
+        },
+        {
+          "key": "pushTestMessage",
+          "english": "Test push ({priority}) from Yep Anywhere"
+        },
+        {
+          "key": "hostIdentityTitle",
+          "english": "Host Marker"
+        },
+        {
+          "key": "hostIdentityDescription",
+          "english": "Choose an emoji that identifies this host in connected headers and browser tabs."
+        },
+        {
+          "key": "hostIdentityPresetsAria",
+          "english": "Host marker presets"
+        },
+        {
+          "key": "hostIdentityUsePreset",
+          "english": "Use {icon} as the host marker"
+        },
+        {
+          "key": "hostIdentityCustomLabel",
+          "english": "Custom host marker"
+        },
+        {
+          "key": "hostIdentityCustomPlaceholder",
+          "english": "Paste one emoji"
+        },
+        {
+          "key": "hostIdentitySave",
+          "english": "Save"
+        },
+        {
+          "key": "hostIdentityClear",
+          "english": "Clear"
+        },
+        {
+          "key": "hostIdentityInvalid",
+          "english": "Enter exactly one emoji or character."
+        },
+        {
+          "key": "hostIdentityMarkerAria",
+          "english": "Current host marker: {icon}"
+        },
+        {
+          "key": "hostAwakeTitle",
+          "english": "Keep host awake while the server is running"
+        },
+        {
+          "key": "hostAwakeDescription",
+          "english": "Prevent automatic system sleep while this server is running, including on battery above the configured reserve. The display may still turn off, and closing a laptop lid follows the normal system policy."
+        },
+        {
+          "key": "hostAwakeStatusLoading",
+          "english": "Checking host availability support..."
+        },
+        {
+          "key": "hostAwakeStatusActive",
+          "english": "Active — preventing automatic sleep."
+        },
+        {
+          "key": "hostAwakeStatusPaused",
+          "english": "Paused — battery is at or below {percent}%; automatic sleep is allowed."
+        },
+        {
+          "key": "hostAwakeStatusUnavailable",
+          "english": "Unavailable on this server."
+        },
+        {
+          "key": "hostAwakeStatusDisabled",
+          "english": "Inactive — normal automatic sleep settings apply."
+        },
+        {
+          "key": "hostAwakeStatusError",
+          "english": "Could not enable: {reason}"
+        },
+        {
+          "key": "hostAwakeStatusUnknownError",
+          "english": "unknown host error"
+        },
+        {
+          "key": "hostAwakeStatusFetchError",
+          "english": "Could not load the host-awake status."
+        },
+        {
+          "key": "hostAwakeBatteryObserved",
+          "english": "Last observed battery: {percent}% at {time}."
+        },
+        {
+          "key": "hostAwakeBatteryObservedUnknownTime",
+          "english": "an unknown time"
+        },
+        {
+          "key": "hostAwakeRefresh",
+          "english": "Refresh status"
+        },
+        {
+          "key": "hostAwakeBatteryFloorTitle",
+          "english": "Allow automatic sleep at"
+        },
+        {
+          "key": "hostAwakeBatteryFloorDescription",
+          "english": "When this host is running on battery at or below this level, stop preventing automatic sleep to preserve the remaining charge."
+        },
+        {
+          "key": "hostAwakeBatteryFloorInput",
+          "english": "Battery reserve percentage"
+        },
+        {
+          "key": "hostAwakeBatteryFloorSave",
+          "english": "Save"
+        },
+        {
+          "key": "hostAwakeBatteryFloorInvalid",
+          "english": "Enter a whole percentage from 1 through 100."
+        },
+        {
+          "key": "providersClaudeLoginCommandPreviewAria",
+          "english": "Claude login command preview"
+        },
+        {
+          "key": "providersClaudeGatewayTitle",
+          "english": "Claude gateway"
+        },
+        {
+          "key": "providersClaudeGatewayDescription",
+          "english": "Add an Anthropic-compatible endpoint as a separate Claude provider. Empty leaves it off."
+        },
+        {
+          "key": "providersClaudeGatewayConfigured",
+          "english": "Configured"
+        },
+        {
+          "key": "providersClaudeGatewayUrlAria",
+          "english": "Claude gateway endpoint URL"
+        },
+        {
+          "key": "providersClaudeGatewayStartCommandLabel",
+          "english": "Start command"
+        },
+        {
+          "key": "providersClaudeGatewayStartCommandAria",
+          "english": "Claude gateway start command"
+        },
+        {
+          "key": "providersClaudeGatewayStartCommandPlaceholder",
+          "english": "cd /path/to/gateway && HOST=localhost gateway start"
+        },
+        {
+          "key": "providersClaudeGatewayStartCommandHint",
+          "english": "Optional. Runs through Bash on the YA server host only when the configured endpoint is loopback and its TCP port has no listener. Keep the gateway in the foreground so YA can stop it on shutdown."
+        },
+        {
+          "key": "providersClaudeGatewayIsolationHint",
+          "english": "Applied only to YA sessions launched through Claude Gateway. Regular Claude sessions and manual Claude TUIs keep their current routing."
+        },
+        {
+          "key": "providersClaudeOllamaDeprecationNotice",
+          "english": "Use Claude Gateway instead. ClaudeOllama will be removed in a future release."
+        },
+        {
+          "key": "providersClaudeOllamaDeprecationDismissAria",
+          "english": "Dismiss ClaudeOllama deprecation notice"
+        },
+        {
+          "key": "providersAdditionalModelsTitle",
+          "english": "Additional models"
+        },
+        {
+          "key": "providersAdditionalModelsDescription",
+          "english": "Opt previous or custom model IDs into Claude model pickers. Nothing is enabled by default."
+        },
+        {
+          "key": "providersAdditionalModelsNone",
+          "english": "None selected"
+        },
+        {
+          "key": "providersAdditionalModelsOne",
+          "english": "1 enabled"
+        },
+        {
+          "key": "providersAdditionalModelsMany",
+          "english": "{count} enabled"
+        },
+        {
+          "key": "providersAdditionalModelsEditorDescription",
+          "english": "Enabled entries appear separately from the primary model list. Account access is checked only when you use a model."
+        },
+        {
+          "key": "providersAdditionalModelsUnlistedDescription",
+          "english": "Previously enabled; no longer maintained by this server"
+        },
+        {
+          "key": "providersAdditionalModelsCustomDescription",
+          "english": "Custom model ID"
+        },
+        {
+          "key": "providersAdditionalModelsCustomTitle",
+          "english": "Custom model ID"
+        },
+        {
+          "key": "providersAdditionalModelsCustomHint",
+          "english": "Add an exact provider model ID. Saving it does not guarantee that your account can use it."
+        },
+        {
+          "key": "providersAdditionalModelsCustomPlaceholder",
+          "english": "claude-model-version"
+        },
+        {
+          "key": "providersAdditionalModelsCustomInputAria",
+          "english": "Custom Claude model ID"
+        },
+        {
+          "key": "providersAdditionalModelsAdd",
+          "english": "Add"
+        },
+        {
+          "key": "providersAdditionalModelsInvalidId",
+          "english": "Enter an exact model ID without spaces."
+        },
+        {
+          "key": "providersAdditionalModelsDuplicateId",
+          "english": "That model is already enabled."
+        },
+        {
+          "key": "providersAdditionalModelsSaveError",
+          "english": "Failed to save additional models"
+        },
+        {
+          "key": "previousModelsGroup",
+          "english": "Previous models"
+        },
+        {
+          "key": "modelSelectionUnavailable",
+          "english": "Saved or current selection; not currently enabled"
+        },
+        {
+          "key": "providersCodexUpdateManualInstallHint",
+          "english": "This Codex install was not installed with npm, so YA cannot update it automatically. Update it with Codex Desktop or your package manager, then restart Yep Anywhere."
+        },
+        {
+          "key": "codexUpdateWillRunCommand",
+          "english": "Yep Anywhere will run:"
+        },
+        {
+          "key": "codexUpdateManualInstallHint",
+          "english": "This Codex install was not installed with npm, so Yep Anywhere cannot update it automatically. Update it with Codex Desktop or your package manager, then restart Yep Anywhere."
+        },
+        {
+          "key": "codexUpdateAutoFutureVersions",
+          "english": "Update next versions too"
+        },
+        {
+          "key": "codexUpdateDone",
+          "english": "Done"
+        },
+        {
+          "key": "speechSettingsBackendValidating",
+          "english": "Validating backend availability..."
+        },
+        {
+          "key": "speechSettingsBackendUnavailable",
+          "english": "Backend unavailable."
+        },
+        {
+          "key": "speechSettingsStreamingRelayUnavailable",
+          "english": "Streaming speech controls are unavailable over relay; this browser uses batch transcription here."
+        },
+        {
+          "key": "speechSettingsXaiKeyTitle",
+          "english": "Browser xAI STT Key"
+        },
+        {
+          "key": "speechSettingsXaiKeyDescription",
+          "english": "Optional. Stored in this browser only and not sent to YA. Direct Grok STT uses it first; if empty, it asks this YA server for a short-lived secret or borrowed key only when transcription starts."
+        },
+        {
+          "key": "speechSettingsXaiKeyPlaceholder",
+          "english": "Borrow from server when empty"
+        },
+        {
+          "key": "speechSettingsParakeetModelTitle",
+          "english": "Parakeet Model"
+        },
+        {
+          "key": "speechSettingsParakeetModelDescription",
+          "english": "Model id sent with YA Parakeet or NeMo transcription requests from this browser."
+        },
+        {
+          "key": "speechSettingsParakeetModelPresetLabel",
+          "english": "Parakeet model preset"
+        },
+        {
+          "key": "speechSettingsParakeetModelInputLabel",
+          "english": "Parakeet model id"
+        },
+        {
+          "key": "speechSettingsParakeetCustomModel",
+          "english": "Custom model id"
+        },
+        {
+          "key": "speechSettingsParakeetModelPlaceholder",
+          "english": "nvidia/parakeet-tdt-0.6b-v3"
+        },
+        {
+          "key": "speechSettingsParakeetModelHint",
+          "english": "Use a model supported by the selected Parakeet backend. The unified streaming Parakeet model needs a separate modern-NeMo runtime."
+        },
+        {
+          "key": "speechSettingsParakeetModelRequiresBackend",
+          "english": "requires {backend}"
+        },
+        {
+          "key": "speechSettingsKeepMicWarmTitle",
+          "english": "Keep Mic Warm"
+        },
+        {
+          "key": "speechSettingsKeepMicWarmDescription",
+          "english": "Keep this browser's microphone stream ready while this tab is visible between server-routed dictations so repeated starts skip the browser's device cold-open. The browser may show the mic indicator while the idle stream is held; no audio is sent between dictations."
+        },
+        {
+          "key": "speechSmartTurnThresholdHint",
+          "english": "1 requires perfect confidence."
+        },
+        {
+          "key": "developmentRelayDebugTitle",
+          "english": "Relay Debug Logging"
+        },
+        {
+          "key": "developmentRelayDebugDescription",
+          "english": "Log relay requests and responses to the browser console. Useful for debugging connection timeouts."
+        },
+        {
+          "key": "developmentWorkstreamsTitle",
+          "english": "Workstreams"
+        },
+        {
+          "key": "developmentWorkstreamsDescription",
+          "english": "Enable experimental workstream surfaces and APIs: per-lane Project Queue targets, each lane a separate real checkout of the project."
+        },
+        {
+          "key": "developmentSessionScrollMemoryTitle",
+          "english": "Session Scroll Memory"
+        },
+        {
+          "key": "developmentSessionScrollMemoryControlTitle",
+          "english": "Restore mode"
+        },
+        {
+          "key": "developmentSessionScrollMemoryDescription",
+          "english": "Browser-local debug setting for how reopened session transcripts restore scroll position. Include the selected mode in scroll bug reports."
+        },
+        {
+          "key": "developmentSessionScrollMemoryModeLiveTail",
+          "english": "Live tail (default)"
+        },
+        {
+          "key": "developmentSessionScrollMemoryModeLiveTailDescription",
+          "english": "Bottom snapshots reopen at the newest output and keep following. Scrolled-back snapshots restore their remembered row."
+        },
+        {
+          "key": "developmentSessionScrollMemoryModeRememberPlace",
+          "english": "Remember place"
+        },
+        {
+          "key": "developmentSessionScrollMemoryModeRememberPlaceDescription",
+          "english": "Reopen at the last viewed row when available, even if newer output arrived below it."
+        },
+        {
+          "key": "developmentSessionScrollMemoryModeManualFollow",
+          "english": "Manual follow"
+        },
+        {
+          "key": "developmentSessionScrollMemoryModeManualFollowDescription",
+          "english": "Currently restores like Remember place; reserved for stricter manual-follow experiments."
+        },
+        {
+          "key": "developmentSessionScrollMemoryModeNoMemory",
+          "english": "No memory"
+        },
+        {
+          "key": "developmentSessionScrollMemoryModeNoMemoryDescription",
+          "english": "Do not retain per-session scroll snapshots; reopening uses the normal initial position."
+        },
+        {
+          "key": "developmentInterruptedWarningActiveAndQueued",
+          "english": "{activeCount} active session{activeSuffix} and {queuedCount} queued message{queuedSuffix} will be interrupted"
+        },
+        {
+          "key": "developmentInterruptedWarningQueued",
+          "english": "{count} queued message{suffix} will be interrupted"
+        },
+        {
+          "key": "agentContextSuggestedHintsTitle",
+          "english": "Suggested context hints"
+        },
+        {
+          "key": "agentContextSuggestedHintsDescription",
+          "english": "Optional agent-facing context composed with, but separate from, global instructions."
+        },
+        {
+          "key": "agentContextSuggestedLatexTitle",
+          "english": "Tell agents this client renders LaTeX math"
+        },
+        {
+          "key": "agentContextSuggestedLatexDescription",
+          "english": "Adds a client-capability hint to use inline and display LaTeX notation when it improves clarity."
+        },
+        {
+          "key": "agentContextPreviewSummary",
+          "english": "Preview effective context"
+        },
+        {
+          "key": "agentContextPreviewEmpty",
+          "english": "No agent context will be sent."
+        },
+        {
+          "key": "settingsUndoChanges",
+          "english": "Undo"
+        },
+        {
+          "key": "settingsUndoChangesTooltip",
+          "english": "Undo changes made on this settings page"
+        },
+        {
+          "key": "settingsSearchPlaceholder",
+          "english": "Search settings"
+        },
+        {
+          "key": "settingsSearchClear",
+          "english": "Clear search"
+        },
+        {
+          "key": "settingsSearchMatchValues",
+          "english": "Match values"
+        },
+        {
+          "key": "settingsSearchMatchValuesTooltip",
+          "english": "Also match each setting's current value"
+        },
+        {
+          "key": "settingsSearchNoResults",
+          "english": "No settings match \"{query}\""
+        },
+        {
+          "key": "settingsSearchJumpTo",
+          "english": "Go to {location}"
+        },
+        {
+          "key": "settingsSearchCategoriesHeading",
+          "english": "Categories"
+        },
+        {
+          "key": "settingsSearchResultCount",
+          "english": "{count} matching settings"
+        },
+        {
+          "key": "settingsBackupTitle",
+          "english": "Browser settings"
+        },
+        {
+          "key": "settingsBackupSave",
+          "english": "Save"
+        },
+        {
+          "key": "settingsBackupLoad",
+          "english": "Load"
+        },
+        {
+          "key": "settingsBackupSaving",
+          "english": "Saving..."
+        },
+        {
+          "key": "settingsBackupLoading",
+          "english": "Loading..."
+        },
+        {
+          "key": "settingsBackupChecking",
+          "english": "Checking for a server copy..."
+        },
+        {
+          "key": "settingsBackupEmpty",
+          "english": "No server copy saved"
+        },
+        {
+          "key": "settingsBackupSavedAt",
+          "english": "Saved {time}"
+        },
+        {
+          "key": "settingsBackupSaveTooltip",
+          "english": "Save this browser's portable settings to the server"
+        },
+        {
+          "key": "settingsBackupLoadTooltip",
+          "english": "Load the server copy into this browser"
+        },
+        {
+          "key": "settingsBackupLoadConfirm",
+          "english": "Replace this browser's portable settings with the server copy? The page will reload."
+        },
+        {
+          "key": "settingsBackupUnavailable",
+          "english": "Server copy is unavailable"
+        },
+        {
+          "key": "settingsBackupSaveFailed",
+          "english": "Failed to save browser settings"
+        },
+        {
+          "key": "settingsBackupLoadFailed",
+          "english": "Failed to load browser settings"
+        },
+        {
+          "key": "messageDeliveryTitle",
+          "english": "Message Delivery"
+        },
+        {
+          "key": "messageDeliveryLoading",
+          "english": "Loading..."
+        },
+        {
+          "key": "messageDeliveryDescription",
+          "english": "How queued-while-busy messages are delivered to the agent. Defaults match first-party provider UIs: each queued message is sent exactly as typed, one per completed turn."
+        },
+        {
+          "key": "messageDeliveryJoinWindowTitle",
+          "english": "Batch Window (Seconds)"
+        },
+        {
+          "key": "messageDeliveryJoinWindowDescription",
+          "english": "Queued messages composed within this many seconds of the previous one are joined into a single turn. 0 = never batch consecutive queued turns."
+        },
+        {
+          "key": "messageDeliveryJoinWindowOffHint",
+          "english": "0 = never batch"
+        },
+        {
+          "key": "messageDeliveryJoinWindowOnHint",
+          "english": "Batch sends within {seconds}s of the previous send"
+        },
+        {
+          "key": "messageDeliveryProjectQueueQuietTitle",
+          "english": "Project Queue Quiet Window (Seconds)"
+        },
+        {
+          "key": "messageDeliveryProjectQueueQuietDescription",
+          "english": "How long the whole project must stay quiet before one Project Queue item starts. Session queues and active work still block it absolutely."
+        },
+        {
+          "key": "messageDeliveryProjectQueueQuietOffHint",
+          "english": "0 = start as soon as the project is idle"
+        },
+        {
+          "key": "messageDeliveryProjectQueueQuietOnHint",
+          "english": "Wait for {seconds}s of project quiet"
+        },
+        {
+          "key": "messageDeliveryComposeAnchorsTitle",
+          "english": "Compose-Time Anchors"
+        },
+        {
+          "key": "messageDeliveryComposeAnchorsDescription",
+          "english": "Prefix delivered queued messages with how long ago they were written, e.g. (93s ago)."
+        },
+        {
+          "key": "messageDeliveryBangCommandsTitle",
+          "english": "Show !! Commands history"
+        },
+        {
+          "key": "messageDeliveryBangCommandsDescription",
+          "english": "Show the cross-session !! command history view and its sidebar entry. Typing !! in a composer always runs the rest of the draft as a local shell command in the session project directory, outside the provider conversation."
+        },
+        {
+          "key": "messageDeliverySteerNowDefaultTitle",
+          "english": "Start with \"now\" steering on"
+        },
+        {
+          "key": "messageDeliverySteerNowDefaultDescription",
+          "english": "Initial state of the per-turn \"now\" toggle, for providers with a \"now\" lane (currently Claude). The toggle itself stays per-turn."
+        },
+        {
+          "key": "messageDeliveryPatientQueueDefaultTitle",
+          "english": "Deliver queued messages only when the agent is fully done (Claude only)"
+        },
+        {
+          "key": "messageDeliveryPatientQueueDefaultDescription",
+          "english": "Claude sessions only — no effect on other providers. When a session is busy and you queue a message, YA delivers it as soon as the agent finishes its current response. Turn this on to wait until the agent has completely finished — including any follow-up or background tasks it started on its own — before delivering. Best for long autonomous Claude runs where your next instruction should land at a real stopping point, not the first pause. (Other providers don't report background work, so there's nothing extra to wait for.)"
+        },
+        {
+          "key": "messageDeliveryProjectQueueShortcutTitle",
+          "english": "Use Ctrl+Enter for Project Queue"
+        },
+        {
+          "key": "messageDeliveryProjectQueueShortcutDescription",
+          "english": "When the Project Queue button is visible, Ctrl+Enter uses it instead of the per-session queue shortcut."
+        },
+        {
+          "key": "appearanceToolbarSteerNowTitle",
+          "english": "\"Now\" steering selector"
+        },
+        {
+          "key": "appearanceToolbarSteerNowDescription",
+          "english": "Per-turn switch that delivers a steer immediately instead of after the current step."
+        },
+        {
+          "key": "appearanceToolbarComposerRecallTitle",
+          "english": "Message recall button"
+        },
+        {
+          "key": "appearanceToolbarComposerRecallDescription",
+          "english": "Experimental. On-screen-keyboard button that lists earlier messages in this session starting with what you have typed, so you can resend or edit one. Ctrl+Up opens the same list whether or not the button is shown."
+        },
+        {
+          "key": "modelSettingsCompactThresholdTitle",
+          "english": "Compact context early"
+        },
+        {
+          "key": "modelSettingsCompactThresholdDescription",
+          "english": "Start a compaction once this model's live context passes the chosen share of its window, instead of waiting for the agent's automatic compaction. Set per model; drag to the left edge to turn off."
+        },
+        {
+          "key": "modelSettingsCompactThresholdOnHint",
+          "english": "Compact at {percent}% (~{tokens} tokens)"
+        },
+        {
+          "key": "modelSettingsCompactThresholdOffHint",
+          "english": "Off — uses the agent's automatic compaction"
+        },
+        {
+          "key": "compactThresholdQuickTitle",
+          "english": "Compact context early"
+        },
+        {
+          "key": "compactThresholdQuickOn",
+          "english": "At {percent}% (~{tokens} tokens)"
+        },
+        {
+          "key": "compactThresholdQuickOff",
+          "english": "Off — agent auto-compacts"
+        },
+        {
+          "key": "fileAccessTitle",
+          "english": "File access"
+        },
+        {
+          "key": "fileAccessDescription",
+          "english": "Which local folders the file viewer may read over HTTP. This limits the web viewer, not what the agent can do."
+        },
+        {
+          "key": "fileAccessProjects",
+          "english": "Project folders"
+        },
+        {
+          "key": "fileAccessUploads",
+          "english": "Uploads"
+        },
+        {
+          "key": "fileAccessTemp",
+          "english": "Temp folders"
+        },
+        {
+          "key": "fileAccessHome",
+          "english": "Home folder (~)"
+        },
+        {
+          "key": "fileAccessHomeDescription",
+          "english": "Allow reading any file under your home directory."
+        },
+        {
+          "key": "fileAccessHomeCaution",
+          "english": "caution"
+        },
+        {
+          "key": "fileAccessCustomTitle",
+          "english": "Custom folders"
+        },
+        {
+          "key": "fileAccessCustomDescription",
+          "english": "One absolute path per line. Add / to allow the entire disk."
+        },
+        {
+          "key": "fileAccessCustomPlaceholder",
+          "english": "/mnt/data\n/Users/me/screenshots"
+        },
+        {
+          "key": "fileAccessWholeDiskWarning",
+          "english": "A custom entry grants whole-disk read access over HTTP."
+        },
+        {
+          "key": "fileAccessAllowedFoldersTitle",
+          "english": "Allowed folders"
+        },
+        {
+          "key": "fileAccessEnvPinnedHint",
+          "english": "Set by an environment variable and cannot be edited here."
+        },
+        {
+          "key": "fileAccessSetViaEnv",
+          "english": "set via ALLOWED_FILE_PATHS"
+        },
+        {
+          "key": "fileAccessNone",
+          "english": "none"
+        },
+        {
+          "key": "localAccessApprovalAuditTitle",
+          "english": "Approval audit log"
+        },
+        {
+          "key": "localAccessApprovalAuditDescription",
+          "english": "Save approve and deny decisions, including tool inputs and commands, to logs/approval-decisions.jsonl."
+        },
+        {
+          "key": "localAccessApprovalAuditUnsupportedDescription",
+          "english": "This server logs approval decisions but cannot toggle that behavior. Update the server to control it."
+        },
+        {
+          "key": "agentsPid",
+          "english": "PID {pid}"
+        },
+        {
+          "key": "agentsKill",
+          "english": "Kill"
+        },
+        {
+          "key": "agentsKilling",
+          "english": "Killing…"
+        },
+        {
+          "key": "agentsKillTitle",
+          "english": "Force-stop this agent process"
+        },
+        {
+          "key": "agentsKillConfirm",
+          "english": "Kill \"{title}\"? This force-stops the agent process and disables auto-resume for the session."
+        },
+        {
+          "key": "agentsKillVerifiedPid",
+          "english": "Stopped PID {pid} and verified it is no longer running."
+        },
+        {
+          "key": "agentsKillVerified",
+          "english": "Stopped the agent and verified the provider process exited."
+        },
+        {
+          "key": "agentsKillResumeBlocked",
+          "english": "Auto-resume disabled for the killed session."
+        },
+        {
+          "key": "agentsKillResumeBlockFailed",
+          "english": "The process stopped, but auto-resume could not be disabled: {message}"
+        },
+        {
+          "key": "agentsKillResumeBlockUnknown",
+          "english": "Unknown exemption error"
+        },
+        {
+          "key": "agentsKillFailed",
+          "english": "Could not stop the agent: {message}"
+        },
+        {
+          "key": "providerChildFallback",
+          "english": "Provider subagent"
+        },
+        {
+          "key": "providerChildrenCountOne",
+          "english": "{count} provider subagent"
+        },
+        {
+          "key": "providerChildrenCountMany",
+          "english": "{count} provider subagents"
+        },
+        {
+          "key": "fileViewerNewSession",
+          "english": "New session from path"
+        },
+        {
+          "key": "fileViewerOpenImageNewTab",
+          "english": "Open image in new tab"
+        },
+        {
+          "key": "fileLinkDismissMenu",
+          "english": "Dismiss file menu"
+        },
+        {
+          "key": "fileLinkMenuView",
+          "english": "View"
+        },
+        {
+          "key": "fileLinkMenuNewSession",
+          "english": "New session"
+        },
+        {
+          "key": "fileLinkMenuCopyPath",
+          "english": "Copy path"
+        },
+        {
+          "key": "fileLinkMenuCopyContents",
+          "english": "Copy contents"
+        },
+        {
+          "key": "speechListeningPlaceholder",
+          "english": "Listening..."
+        },
+        {
+          "key": "speechTranscribingPlaceholder",
+          "english": "Transcribing..."
+        },
+        {
+          "key": "speechFinalizingPlaceholder",
+          "english": "Finalizing..."
+        },
+        {
+          "key": "speechTranscribingCancel",
+          "english": "Cancel transcription"
+        }
+      ]
+    }
+  ]
+}
