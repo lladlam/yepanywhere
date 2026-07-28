@@ -2,6 +2,7 @@ import enMessages from "./en.json";
 import baseMessages from "./zh-CN.json";
 import coreSettings from "./zh-CN-complete/01-core-settings.json";
 import toolbarProjectQueue from "./zh-CN-complete/02-toolbar-project-queue.json";
+import toolbarSides from "./zh-CN-complete/02a-toolbar-sides.json";
 import sessionRecapsCache from "./zh-CN-complete/03-session-recaps-cache.json";
 import sessionSharingWarnings from "./zh-CN-complete/04-session-sharing-warnings.json";
 import sessionToolbarRuntime from "./zh-CN-complete/05-session-toolbar-runtime.json";
@@ -28,6 +29,7 @@ import remoteSetup from "./zh-CN-complete/13-remote-setup.json";
 const completeMessages = {
   ...coreSettings,
   ...toolbarProjectQueue,
+  ...toolbarSides,
   ...sessionRecapsCache,
   ...sessionSharingWarnings,
   ...sessionToolbarRuntime,
