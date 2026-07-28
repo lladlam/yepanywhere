@@ -25,10 +25,17 @@ jobs:
           node-version: 22
           cache: pnpm
       - name: Install dependencies
-        run: pnpm install --frozen-lockfile
-      - name: Validate catalog coverage and placeholders
+        id: install
+        continue-on-error: true
         run: |
-          node --input-type=module <<'NODE'
+          set -o pipefail
+          pnpm install --frozen-lockfile 2>&1 | tee /tmp/install.log
+      - name: Validate catalog coverage and placeholders
+        id: catalog
+        continue-on-error: true
+        run: |
+          set -o pipefail
+          node --input-type=module <<'NODE' 2>&1 | tee /tmp/catalog.log
           import { readFile, readdir } from "node:fs/promises";
           import path from "node:path";
 
@@ -59,32 +66,55 @@ jobs:
               JSON.stringify(placeholders(merged[key])),
           );
 
+          console.log(`English keys: ${enKeys.length}`);
+          console.log(`Fallback fragments: ${fragmentFiles.length}`);
+          console.log(`Missing keys: ${missing.length}`);
+          console.log(`Extra keys: ${extra.length}`);
+          console.log(`Placeholder mismatches: ${placeholderMismatches.length}`);
+          if (missing.length) console.log("Missing:", missing);
+          if (extra.length) console.log("Extra:", extra);
+          if (placeholderMismatches.length) {
+            console.log("Placeholder mismatches:", placeholderMismatches);
+          }
           if (missing.length || extra.length || placeholderMismatches.length) {
-            console.error({ missing, extra, placeholderMismatches });
             process.exit(1);
           }
-
-          console.log(
-            `Validated ${enKeys.length} keys across ${fragmentFiles.length} fallback fragments; all placeholders match.`,
-          );
           NODE
       - name: Typecheck
-        run: pnpm typecheck
-      - name: Build client
-        run: pnpm --filter client build
-      - name: Record success
+        id: typecheck
+        if: steps.install.outcome == 'success'
+        continue-on-error: true
         run: |
-          printf '%s\n' \
-            'zh-CN validation passed' \
-            'JSON parse: passed' \
-            'Catalog key coverage: passed' \
-            'Interpolation placeholders: passed' \
-            'TypeScript typecheck: passed' \
-            'Client build: passed' \
-            "Commit: $GITHUB_SHA" \
-            > zh-CN-validation-result.txt
+          set -o pipefail
+          pnpm typecheck 2>&1 | tee /tmp/typecheck.log
+      - name: Build client
+        id: build
+        if: steps.install.outcome == 'success'
+        continue-on-error: true
+        run: |
+          set -o pipefail
+          pnpm --filter client build 2>&1 | tee /tmp/build.log
+      - name: Record diagnostics
+        if: always()
+        run: |
+          {
+            echo 'zh-CN validation diagnostics'
+            echo "Install: ${{ steps.install.outcome }}"
+            echo "Catalog: ${{ steps.catalog.outcome }}"
+            echo "TypeScript typecheck: ${{ steps.typecheck.outcome }}"
+            echo "Client build: ${{ steps.build.outcome }}"
+            echo "Commit: $GITHUB_SHA"
+            for log in catalog typecheck build install; do
+              file="/tmp/$log.log"
+              if [ -f "$file" ]; then
+                echo
+                echo "--- $log log ---"
+                tail -n 120 "$file"
+              fi
+            done
+          } > zh-CN-validation-result.txt
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add zh-CN-validation-result.txt
-          git commit -m "chore: record zh-CN validation success"
+          git commit -m "chore: record zh-CN validation diagnostics"
           git push origin HEAD:i18n/complete-zh-cn
