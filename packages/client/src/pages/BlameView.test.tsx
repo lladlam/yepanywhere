@@ -1,6 +1,7 @@
 // @vitest-environment jsdom
 
 import {
+  act,
   cleanup,
   fireEvent,
   render,
@@ -19,14 +20,20 @@ vi.mock("../hooks/useRemoteBasePath", () => ({
 }));
 
 const getGitBlame = vi.fn();
+const getFile = vi.fn();
 const listReviewComments = vi.fn();
 const addReviewComment = vi.fn();
+const writeClipboardText = vi.fn();
 vi.mock("../api/client", () => ({
   api: {
+    getFile: (...args: unknown[]) => getFile(...args),
     getGitBlame: (...args: unknown[]) => getGitBlame(...args),
     listReviewComments: (...args: unknown[]) => listReviewComments(...args),
     addReviewComment: (...args: unknown[]) => addReviewComment(...args),
   },
+}));
+vi.mock("../lib/clipboard", () => ({
+  writeClipboardText: (...args: unknown[]) => writeClipboardText(...args),
 }));
 
 import { BlameView } from "./BlameView";
@@ -35,6 +42,16 @@ const COMMITTED_SHA = "b".repeat(40);
 const t = (key: string) => key;
 
 function primeBlame() {
+  getFile.mockResolvedValue({
+    metadata: {
+      path: "src/x.ts",
+      size: 25,
+      mimeType: "text/typescript",
+      isText: true,
+    },
+    content: "const a = 1;\nconst b = 2;\n",
+    rawUrl: "/raw/src/x.ts",
+  });
   getGitBlame.mockResolvedValue({
     path: "src/x.ts",
     rev: "HEAD",
@@ -81,7 +98,7 @@ async function commentOnRow(rowIndex: number, text: string) {
   await waitFor(() =>
     expect(document.querySelectorAll(".blame-row").length).toBe(2),
   );
-  fireEvent.click(document.querySelectorAll(".blame-row")[rowIndex]!);
+  fireEvent.click(document.querySelectorAll(".blame-line-target")[rowIndex]!);
   fireEvent.change(await screen.findByRole("textbox"), {
     target: { value: text },
   });
@@ -128,4 +145,190 @@ describe("BlameView", () => {
     expect(anchor.revision.kind).toBe("uncommitted");
     expect(anchor.newLine).toBe(2);
   });
+
+  it("does not tint a line for a pending comment on another revision", async () => {
+    primeBlame();
+    listReviewComments.mockResolvedValue({
+      comments: [
+        {
+          id: "stale",
+          status: "pending",
+          text: "from an older commit",
+          createdAt: "2026-07-26T00:00:00Z",
+          anchor: {
+            path: "src/x.ts",
+            revision: { kind: "sha", sha: "d".repeat(40) },
+            side: "new",
+            oldLine: null,
+            newLine: 1,
+            snippet: "const a = 1;",
+          },
+        },
+      ],
+      batches: [],
+      pendingCount: 1,
+    });
+
+    render(
+      <MemoryRouter>
+        <BlameView projectId="p1" path="src/x.ts" t={t} />
+      </MemoryRouter>,
+    );
+
+    await waitFor(() =>
+      expect(document.querySelectorAll(".blame-row").length).toBe(2),
+    );
+    expect(
+      document
+        .querySelector(".blame-row")
+        ?.classList.contains("has-review-comment"),
+    ).toBe(false);
+  });
+
+  it("shows file content before blame, then enriches hash actions", async () => {
+    let resolveBlame!: (value: ReturnType<typeof blameResult>) => void;
+    const pendingBlame = new Promise<ReturnType<typeof blameResult>>(
+      (resolve) => {
+        resolveBlame = resolve;
+      },
+    );
+    getFile.mockResolvedValue({
+      metadata: {
+        path: "src/x.ts",
+        size: 13,
+        mimeType: "text/typescript",
+        isText: true,
+      },
+      content: "const fast = 1;\n",
+      rawUrl: "/raw/src/x.ts",
+    });
+    getGitBlame.mockReturnValue(pendingBlame);
+    listReviewComments.mockResolvedValue({
+      comments: [],
+      batches: [],
+      pendingCount: 0,
+    });
+    const onOpenCommit = vi.fn();
+    const onContentWidthChange = vi.fn();
+
+    render(
+      <MemoryRouter>
+        <BlameView
+          projectId="p1"
+          path="src/x.ts"
+          onOpenCommit={onOpenCommit}
+          onContentWidthChange={onContentWidthChange}
+          t={t}
+        />
+      </MemoryRouter>,
+    );
+
+    expect(await screen.findByText("const fast = 1;")).toBeTruthy();
+    expect(getFile).toHaveBeenCalledWith("p1", "src/x.ts", false);
+    expect(onContentWidthChange).toHaveBeenCalledWith("src/x.ts", 320);
+    expect(document.querySelector(".blame-gutter-loading")).toBeTruthy();
+    expect(document.querySelector(".blame-commit-link")).toBeNull();
+
+    await act(async () => {
+      resolveBlame(blameResult("const fast = 1;"));
+      await pendingBlame;
+    });
+    await waitFor(() => expect(onContentWidthChange).toHaveBeenCalledTimes(2));
+
+    const hash = await screen.findByRole("button", { name: "bbbbb" });
+    expect(hash.getAttribute("title")).toContain("init");
+    fireEvent.click(hash);
+    expect(onOpenCommit).toHaveBeenCalledWith(COMMITTED_SHA);
+
+    fireEvent.contextMenu(hash, { clientX: 20, clientY: 20 });
+    expect(
+      await screen.findByRole("menuitem", { name: "sourceCopyCommitHash" }),
+    ).toBeTruthy();
+    expect(
+      screen.getByRole("menuitem", { name: "sourceOpenCommit" }),
+    ).toBeTruthy();
+  });
+
+  it("uses distinct path and raw-content actions beside their targets", async () => {
+    primeBlame();
+    writeClipboardText.mockResolvedValue(true);
+    render(
+      <MemoryRouter>
+        <BlameView projectId="p1" path="src/x.ts" t={t} />
+      </MemoryRouter>,
+    );
+
+    const pathCopy = await screen.findByRole("button", {
+      name: "sourceCopyPath",
+    });
+    const contentCopy = screen.getByRole("button", {
+      name: "sourceCopyRawContent",
+    });
+    expect(pathCopy.closest(".blame-view-path-group")).toBeTruthy();
+    expect(contentCopy.classList.contains("blame-content-copy")).toBe(true);
+
+    fireEvent.click(pathCopy);
+    fireEvent.click(contentCopy);
+    await waitFor(() =>
+      expect(writeClipboardText.mock.calls).toEqual([
+        ["src/x.ts"],
+        ["const a = 1;\nconst b = 2;\n"],
+      ]),
+    );
+  });
+
+  it("keeps commit, line number, and selectable content as separate columns", async () => {
+    primeBlame();
+    render(
+      <MemoryRouter>
+        <BlameView projectId="p1" path="src/x.ts" t={t} />
+      </MemoryRouter>,
+    );
+
+    await waitFor(() =>
+      expect(document.querySelectorAll(".blame-row").length).toBe(2),
+    );
+    const row = document.querySelector(".blame-row")!;
+    expect(row.children[0]?.classList.contains("blame-gutter")).toBe(true);
+    expect(row.children[1]?.classList.contains("blame-lineno")).toBe(true);
+    expect(row.children[2]?.classList.contains("blame-code")).toBe(true);
+
+    const selection = vi.spyOn(window, "getSelection").mockReturnValue({
+      isCollapsed: false,
+      toString: () => "const a",
+      containsNode: () => true,
+    } as unknown as Selection);
+    fireEvent.click(row.children[2]!);
+    expect(screen.queryByRole("textbox")).toBeNull();
+
+    selection.mockReturnValue({
+      isCollapsed: false,
+      toString: () => "selected elsewhere",
+      containsNode: () => false,
+    } as unknown as Selection);
+    fireEvent.click(row.children[2]!);
+    expect(await screen.findByRole("textbox")).toBeTruthy();
+
+    selection.mockRestore();
+  });
 });
+
+function blameResult(content: string) {
+  return {
+    path: "src/x.ts",
+    rev: "HEAD",
+    truncated: false,
+    lines: [
+      {
+        line: 1,
+        sha: COMMITTED_SHA,
+        shortSha: "bbbbbbb",
+        author: "Dev",
+        authorTime: "2026-07-26T00:00:00Z",
+        summary: "init",
+        content,
+        uncommitted: false,
+      },
+    ],
+  };
+}

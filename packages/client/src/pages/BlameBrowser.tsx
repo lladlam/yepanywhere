@@ -31,12 +31,15 @@ export function BlameBrowser({
   projectId,
   isWideScreen,
   initialPath,
+  onOpenCommit,
   t,
 }: {
   projectId: string;
   isWideScreen: boolean;
   /** Seed the open file (the commit-diff → blame-at-HEAD bridge). */
   initialPath?: string;
+  /** Open a populated blame hash in the commit browser. */
+  onOpenCommit?: (sha: string) => void;
   t: TranslationFn;
 }) {
   const [files, setFiles] = useState<string[]>([]);
@@ -46,6 +49,10 @@ export function BlameBrowser({
   const [selectedPath, setSelectedPath] = useState<string | null>(
     initialPath ?? null,
   );
+  const [naturalDetailMeasurement, setNaturalDetailMeasurement] = useState<{
+    path: string;
+    width: number;
+  } | null>(null);
   const searchInputRef = useRef<HTMLInputElement>(null);
   const fileMenu = useSourceContextMenu(t);
   useSourceSearchShortcut(searchInputRef);
@@ -114,12 +121,23 @@ export function BlameBrowser({
     ],
     [t],
   );
+  const handleContentWidthChange = useCallback(
+    (path: string, width: number) => {
+      setNaturalDetailMeasurement({ path, width });
+    },
+    [],
+  );
+  const naturalDetailWidth =
+    naturalDetailMeasurement?.path === selectedPath
+      ? naturalDetailMeasurement.width
+      : undefined;
 
   return (
     <div className="blame-browser">
       <ResizableSourceColumns
         layout="files"
         initialFilesWidth={340}
+        naturalDetailWidth={isWideScreen ? naturalDetailWidth : undefined}
         className="blame-browser-columns"
         t={t}
       >
@@ -192,7 +210,13 @@ export function BlameBrowser({
         </div>
 
         {isWideScreen && selectedPath && (
-          <BlameView projectId={projectId} path={selectedPath} t={t} />
+          <BlameView
+            projectId={projectId}
+            path={selectedPath}
+            onOpenCommit={onOpenCommit}
+            onContentWidthChange={handleContentWidthChange}
+            t={t}
+          />
         )}
       </ResizableSourceColumns>
       {fileMenu.menu}
@@ -203,7 +227,12 @@ export function BlameBrowser({
           onClose={() => setSelectedPath(null)}
           closeOnBackGesture
         >
-          <BlameView projectId={projectId} path={selectedPath} t={t} />
+          <BlameView
+            projectId={projectId}
+            path={selectedPath}
+            onOpenCommit={onOpenCommit}
+            t={t}
+          />
         </Modal>
       )}
     </div>
