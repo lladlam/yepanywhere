@@ -38,7 +38,7 @@ export type TranslationFn = (
 
 const localeLoaders: Record<Locale, () => Promise<LocaleMessages>> = {
   en: async () => defaultMessages,
-  "zh-CN": async () => (await import("./i18n/zh-CN.json")).default,
+  "zh-CN": async () => (await import("./i18n/zh-CN-complete")).default,
   es: async () => (await import("./i18n/es.json")).default,
   fr: async () => (await import("./i18n/fr.json")).default,
   de: async () => (await import("./i18n/de.json")).default,
